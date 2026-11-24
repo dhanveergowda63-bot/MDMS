@@ -5,3 +5,12 @@ export interface LoginFormValues {
 }
 
 export type LoginFormErrors = Partial<Record<"email" | "password", string>>;
+
+export interface ResetPasswordValues {
+  password: string;
+  confirm: string;
+}
+
+export type ResetPasswordErrors = Partial<
+  Record<keyof ResetPasswordValues, string>
+>;

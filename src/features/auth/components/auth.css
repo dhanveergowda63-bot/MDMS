@@ -1,92 +1,39 @@
-.auth-page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: #f4f5f9;
+.auth-rules {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 13px;
+  color: #6b7280;
 }
-.auth-page__brand {
-  padding: 16px 24px;
-  font-weight: 700;
-  font-size: 20px;
-  background: #e5e7eb;
-  color: #111827;
+.auth-rules li {
+  padding: 2px 0;
 }
-.auth-card {
-  width: 100%;
-  max-width: 420px;
-  margin: 48px auto;
-  padding: 32px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  color: #111827;
+.auth-rules li::before {
+  content: "○ ";
 }
-.auth-card__title {
-  margin: 0 0 4px;
-  text-align: center;
-  font-size: 26px;
+.auth-rules__ok {
+  color: #15803d;
 }
-.auth-card__subtitle {
+.auth-rules__ok::before {
+  content: "✓ " !important;
+}
+
+.auth-message {
   margin: 0 0 24px;
   text-align: center;
-  color: #6b7280;
   font-size: 14px;
+  color: #4b5563;
 }
-
-.auth-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+.auth-btn--secondary {
+  margin-top: 12px;
+  color: #111827;
+  background: #fff;
+  border: 1px solid #111827;
 }
-.auth-link {
-  color: #4f46e5;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
+.auth-btn--secondary:hover {
+  background: #f3f4f6;
 }
-.auth-link:hover {
-  text-decoration: underline;
-}
-
-.auth-btn {
-  width: 100%;
-  padding: 12px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #fff;
-  background: #111827;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-}
-.auth-btn:hover {
-  background: #1f2937;
-}
-
-.auth-info {
-  margin: 16px 0 0;
-  padding: 10px 12px;
-  font-size: 13px;
-  color: #1e40af;
-  background: #eff6ff;
-  border-radius: 8px;
-}
-
-.role-switcher {
-  margin-top: 28px;
-  padding-top: 16px;
-  border-top: 1px dashed #d1d5db;
+.auth-center {
+  margin-top: 20px;
   text-align: center;
-}
-.role-switcher__title {
-  margin: 0 0 8px;
-  font-size: 12px;
-  color: #6b7280;
-}
-.role-switcher__links {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
 }
