@@ -1,0 +1,52 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.field__label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.field__control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.field__input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #c9ced6;
+  border-radius: 8px;
+  background: #fff;
+  color: #111827;
+}
+.field__input:focus {
+  outline: 2px solid #4f46e5;
+  outline-offset: 1px;
+}
+.field__input--error {
+  border-color: #dc2626;
+}
+.field__error {
+  margin: 0;
+  font-size: 13px;
+  color: #dc2626;
+}
+.field__adornment {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: #4f46e5;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
