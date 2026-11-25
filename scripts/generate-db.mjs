@@ -298,6 +298,79 @@ for (const zone of zones) {
   }
 }
 
+// Everything below the zone consumption runs after the existing faker calls,
+// so adding it does not change the data generated above.
+
+// ---------- meter count per customer (for the zone user table) ----------
+for (const u of users) {
+  if (u.role === "customer")
+    u.meterCount = meters.filter((m) => m.ownerId === u.id).length;
+}
+
+// ---------- daily meter readings (last 90 days, active meters only) ----------
+// readingKwh is the cumulative register value at the end of the day.
+const READING_DAYS = 90;
+const dailyBase = {
+  Domestic: [4, 9],
+  Commercial: [10, 20],
+  Industrial: [25, 45],
+};
+const readingDates = Array.from({ length: READING_DAYS }, (_, i) => {
+  const d = new Date(NOW);
+  d.setUTCDate(d.getUTCDate() - (READING_DAYS - 1 - i));
+  return dateOnly(d);
+});
+
+const meterReadings = [];
+for (const meter of activeMeters) {
+  const [min, max] = dailyBase[meter.tariffCategory];
+  const base = faker.number.float({ min, max });
+  let register = faker.number.int({ min: 1500, max: 12000 });
+  for (const date of readingDates) {
+    const weekday = new Date(date).getUTCDay();
+    const weekFactor =
+      meter.tariffCategory === "Domestic"
+        ? weekday === 0 || weekday === 6
+          ? 1.25
+          : 1
+        : weekday === 0
+          ? 0.6
+          : 1;
+    const consumptionKwh = round(
+      base * weekFactor * faker.number.float({ min: 0.75, max: 1.25 }),
+    );
+    register = round(register + consumptionKwh);
+    meterReadings.push({
+      id: `MR-${pad(meterReadings.length + 1, 5)}`,
+      meterId: meter.id,
+      zoneId: meter.zoneId,
+      date,
+      readingKwh: register,
+      consumptionKwh,
+    });
+  }
+  // The meter's last reading is the end of its reading history.
+  meter.lastReadingKwh = register;
+}
+
+// ---------- daily consumption per zone (sum of its meters) ----------
+const zoneDailyConsumption = [];
+for (const zone of zones) {
+  const zoneReadings = meterReadings.filter((r) => r.zoneId === zone.id);
+  for (const date of readingDates) {
+    const day = zoneReadings.filter((r) => r.date === date);
+    const totalKwh = round(day.reduce((sum, r) => sum + r.consumptionKwh, 0));
+    zoneDailyConsumption.push({
+      id: `ZD-${pad(zoneDailyConsumption.length + 1, 4)}`,
+      zoneId: zone.id,
+      date,
+      totalKwh,
+      meterCount: day.length,
+      avgKwhPerMeter: day.length ? round(totalKwh / day.length) : 0,
+    });
+  }
+}
+
 // ---------- sample data from the Setup Guide ----------
 // Kept so the existing end-user Dashboard keeps working until it uses real series.
 const dailyData = [
@@ -328,6 +401,8 @@ for (const [name, list] of Object.entries({
   alerts,
   auditLogs,
   zoneConsumption,
+  meterReadings,
+  zoneDailyConsumption,
 })) {
   if (new Set(list.map((x) => x.id)).size !== list.length)
     throw new Error(`Duplicate ids in ${name}`);
@@ -342,6 +417,8 @@ const db = {
   auditLogs,
   enterpriseSettings,
   zoneConsumption,
+  meterReadings,
+  zoneDailyConsumption,
   dailyData,
   weeklyData,
   monthlyData,
@@ -353,5 +430,6 @@ writeFileSync(
 
 console.log(
   `db.json written: ${zones.length} zones, ${users.length} users, ${meters.length} meters, ` +
-    `${alerts.length} alerts, ${auditLogs.length} audit logs, ${zoneConsumption.length} consumption rows`,
+    `${alerts.length} alerts, ${auditLogs.length} audit logs, ${zoneConsumption.length} consumption rows, ` +
+    `${meterReadings.length} meter readings`,
 );
