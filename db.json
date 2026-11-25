@@ -1,25 +1,5777 @@
 {
+  "zones": [
+    {
+      "id": "ZN-001",
+      "name": "Mangalore",
+      "location": "Mangaluru, Dakshina Kannada",
+      "pincode": "575001",
+      "description": "Electricity distribution zone covering Mangalore and nearby areas.",
+      "adminId": "U-002",
+      "adminName": "Chatur Acharya",
+      "status": "Active",
+      "totalMeters": 18,
+      "totalUsers": 15
+    },
+    {
+      "id": "ZN-002",
+      "name": "Udupi",
+      "location": "Udupi, Karnataka",
+      "pincode": "576101",
+      "description": "Electricity distribution zone covering Udupi and nearby areas.",
+      "adminId": "U-003",
+      "adminName": "Dhananjay Malik",
+      "status": "Active",
+      "totalMeters": 17,
+      "totalUsers": 15
+    },
+    {
+      "id": "ZN-003",
+      "name": "Surathkal",
+      "location": "Surathkal, Mangaluru",
+      "pincode": "575014",
+      "description": "Electricity distribution zone covering Surathkal and nearby areas.",
+      "adminId": "U-004",
+      "adminName": "Agastya Abbott-Kakkar",
+      "status": "Active",
+      "totalMeters": 20,
+      "totalUsers": 15
+    },
+    {
+      "id": "ZN-004",
+      "name": "Mulki",
+      "location": "Mulki, Dakshina Kannada",
+      "pincode": "574154",
+      "description": "Electricity distribution zone covering Mulki and nearby areas.",
+      "adminId": "U-005",
+      "adminName": "Bhardwaj Gowda",
+      "status": "Active",
+      "totalMeters": 19,
+      "totalUsers": 15
+    },
+    {
+      "id": "ZN-005",
+      "name": "Padil",
+      "location": "Padil, Mangaluru",
+      "pincode": "575007",
+      "description": "Electricity distribution zone covering Padil and nearby areas.",
+      "adminId": "U-006",
+      "adminName": "Lakshminath Bhattathiri",
+      "status": "Active",
+      "totalMeters": 20,
+      "totalUsers": 15
+    },
+    {
+      "id": "ZN-006",
+      "name": "Bajpe",
+      "location": "Bajpe, Mangaluru",
+      "pincode": "574142",
+      "description": "Electricity distribution zone covering Bajpe and nearby areas.",
+      "adminId": "U-007",
+      "adminName": "Siddhran Embranthiri",
+      "status": "Active",
+      "totalMeters": 22,
+      "totalUsers": 15
+    }
+  ],
   "users": [
     {
-      "id": "1",
-      "name": "Sowrabh",
-      "email": "sowrabh@gmail.com",
-      "role": "Admin"
+      "id": "U-001",
+      "name": "Divya Kapoor",
+      "email": "divya.kapoor1@example.com",
+      "phone": "+91 9195733280",
+      "role": "enterprise",
+      "zoneId": null,
+      "status": "Active",
+      "joinedOn": "2024-09-04"
     },
-    { "id": "2", "name": "Rahul", "email": "rahul@gmail.com", "role": "User" },
-    { "id": "3", "name": "Kiran", "email": "kiran@gmail.com", "role": "User" }
+    {
+      "id": "U-002",
+      "name": "Chatur Acharya",
+      "email": "chatur.acharya2@example.com",
+      "phone": "+91 6262910468",
+      "role": "zone_admin",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2025-08-17"
+    },
+    {
+      "id": "U-003",
+      "name": "Dhananjay Malik",
+      "email": "dhananjay.malik3@example.com",
+      "phone": "+91 7249302226",
+      "role": "zone_admin",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2025-11-12"
+    },
+    {
+      "id": "U-004",
+      "name": "Agastya Abbott-Kakkar",
+      "email": "agastya.abbottkakkar4@example.com",
+      "phone": "+91 6694366550",
+      "role": "zone_admin",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2026-11-20"
+    },
+    {
+      "id": "U-005",
+      "name": "Bhardwaj Gowda",
+      "email": "bhardwaj.gowda5@example.com",
+      "phone": "+91 8354271187",
+      "role": "zone_admin",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2024-01-06"
+    },
+    {
+      "id": "U-006",
+      "name": "Lakshminath Bhattathiri",
+      "email": "lakshminath.bhattathiri6@example.com",
+      "phone": "+91 6880597069",
+      "role": "zone_admin",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2026-08-06"
+    },
+    {
+      "id": "U-007",
+      "name": "Siddhran Embranthiri",
+      "email": "siddhran.embranthiri7@example.com",
+      "phone": "+91 9436665496",
+      "role": "zone_admin",
+      "zoneId": "ZN-006",
+      "status": "Active",
+      "joinedOn": "2024-08-06"
+    },
+    {
+      "id": "U-008",
+      "name": "Achyut Talwar",
+      "email": "achyut.talwar8@example.com",
+      "phone": "+91 8650988234",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2026-11-03"
+    },
+    {
+      "id": "U-009",
+      "name": "Anshula Panicker-Gandhi",
+      "email": "anshula.panickergandhi9@example.com",
+      "phone": "+91 9185369128",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2026-05-21"
+    },
+    {
+      "id": "U-010",
+      "name": "Aatmaja Ahuja",
+      "email": "aatmaja.ahuja10@example.com",
+      "phone": "+91 6202801098",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2023-08-30"
+    },
+    {
+      "id": "U-011",
+      "name": "Avani Mahajan",
+      "email": "avani.mahajan11@example.com",
+      "phone": "+91 8701645045",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2025-08-09"
+    },
+    {
+      "id": "U-012",
+      "name": "Elakshi Saini",
+      "email": "elakshi.saini12@example.com",
+      "phone": "+91 8918303544",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2025-12-23"
+    },
+    {
+      "id": "U-013",
+      "name": "Manisha Kaur",
+      "email": "manisha.kaur13@example.com",
+      "phone": "+91 9839367067",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2026-06-03"
+    },
+    {
+      "id": "U-014",
+      "name": "Manjusha Banerjee",
+      "email": "manjusha.banerjee14@example.com",
+      "phone": "+91 6747664686",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2026-06-10"
+    },
+    {
+      "id": "U-015",
+      "name": "Dipali Kaniyar",
+      "email": "dipali.kaniyar15@example.com",
+      "phone": "+91 8482404431",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2024-07-27"
+    },
+    {
+      "id": "U-016",
+      "name": "Diptendu Prajapat",
+      "email": "diptendu.prajapat16@example.com",
+      "phone": "+91 9685155153",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2026-06-29"
+    },
+    {
+      "id": "U-017",
+      "name": "Girik Talwar",
+      "email": "girik.talwar17@example.com",
+      "phone": "+91 9024891204",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2024-01-12"
+    },
+    {
+      "id": "U-018",
+      "name": "Ananda Varman",
+      "email": "ananda.varman18@example.com",
+      "phone": "+91 6677415697",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2024-10-24"
+    },
+    {
+      "id": "U-019",
+      "name": "Agneya Kakkar",
+      "email": "agneya.kakkar19@example.com",
+      "phone": "+91 6027487934",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2025-10-18"
+    },
+    {
+      "id": "U-020",
+      "name": "Prasad Jangid",
+      "email": "prasad.jangid20@example.com",
+      "phone": "+91 9038695920",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2025-12-11"
+    },
+    {
+      "id": "U-021",
+      "name": "Uma Verma",
+      "email": "uma.verma21@example.com",
+      "phone": "+91 8117337968",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2026-10-18"
+    },
+    {
+      "id": "U-022",
+      "name": "Sitara Joshi",
+      "email": "sitara.joshi22@example.com",
+      "phone": "+91 7308518383",
+      "role": "customer",
+      "zoneId": "ZN-001",
+      "status": "Active",
+      "joinedOn": "2026-08-07"
+    },
+    {
+      "id": "U-023",
+      "name": "Malti Bhattacharya",
+      "email": "malti.bhattacharya23@example.com",
+      "phone": "+91 9328473736",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2024-10-29"
+    },
+    {
+      "id": "U-024",
+      "name": "Basanti Bhat",
+      "email": "basanti.bhat24@example.com",
+      "phone": "+91 8186546659",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2024-02-22"
+    },
+    {
+      "id": "U-025",
+      "name": "Chandira Asan",
+      "email": "chandira.asan25@example.com",
+      "phone": "+91 9438355829",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2023-06-13"
+    },
+    {
+      "id": "U-026",
+      "name": "Lavanya Mishra",
+      "email": "lavanya.mishra26@example.com",
+      "phone": "+91 8560388934",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2023-03-02"
+    },
+    {
+      "id": "U-027",
+      "name": "Javas Bandopadhyay",
+      "email": "javas.bandopadhyay27@example.com",
+      "phone": "+91 8346237735",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2024-09-19"
+    },
+    {
+      "id": "U-028",
+      "name": "Mukul Nayar",
+      "email": "mukul.nayar28@example.com",
+      "phone": "+91 8375545966",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2025-11-08"
+    },
+    {
+      "id": "U-029",
+      "name": "Rita Khatri",
+      "email": "rita.khatri29@example.com",
+      "phone": "+91 8829530068",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2024-07-01"
+    },
+    {
+      "id": "U-030",
+      "name": "Rati Nayar",
+      "email": "rati.nayar30@example.com",
+      "phone": "+91 7914468205",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2025-09-02"
+    },
+    {
+      "id": "U-031",
+      "name": "Giriraj Khan",
+      "email": "giriraj.khan31@example.com",
+      "phone": "+91 9320381839",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2025-11-14"
+    },
+    {
+      "id": "U-032",
+      "name": "Shubhaprada Kapoor",
+      "email": "shubhaprada.kapoor32@example.com",
+      "phone": "+91 9483833735",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2023-05-04"
+    },
+    {
+      "id": "U-033",
+      "name": "Veda Gupta",
+      "email": "veda.gupta33@example.com",
+      "phone": "+91 9130915296",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2024-09-20"
+    },
+    {
+      "id": "U-034",
+      "name": "Tanirika Singh",
+      "email": "tanirika.singh34@example.com",
+      "phone": "+91 6673333149",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2025-05-13"
+    },
+    {
+      "id": "U-035",
+      "name": "Giri Khanna",
+      "email": "giri.khanna35@example.com",
+      "phone": "+91 8467370577",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2023-02-10"
+    },
+    {
+      "id": "U-036",
+      "name": "Akshaj Shukla",
+      "email": "akshaj.shukla36@example.com",
+      "phone": "+91 8014748739",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2025-02-17"
+    },
+    {
+      "id": "U-037",
+      "name": "Aagam Talwar",
+      "email": "aagam.talwar37@example.com",
+      "phone": "+91 9515051925",
+      "role": "customer",
+      "zoneId": "ZN-002",
+      "status": "Active",
+      "joinedOn": "2026-05-24"
+    },
+    {
+      "id": "U-038",
+      "name": "Omana Shukla",
+      "email": "omana.shukla38@example.com",
+      "phone": "+91 8498246843",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2023-12-31"
+    },
+    {
+      "id": "U-039",
+      "name": "Acaryatanaya Bhattathiri",
+      "email": "acaryatanaya.bhattathiri39@example.com",
+      "phone": "+91 8452917007",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2026-03-31"
+    },
+    {
+      "id": "U-040",
+      "name": "Swapnil Reddy",
+      "email": "swapnil.reddy40@example.com",
+      "phone": "+91 6547094228",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2025-07-17"
+    },
+    {
+      "id": "U-041",
+      "name": "Mani Khatri",
+      "email": "mani.khatri41@example.com",
+      "phone": "+91 8217240466",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2026-03-22"
+    },
+    {
+      "id": "U-042",
+      "name": "Bhardwaj Panicker",
+      "email": "bhardwaj.panicker42@example.com",
+      "phone": "+91 6228620445",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2024-02-10"
+    },
+    {
+      "id": "U-043",
+      "name": "Anuja Ganaka-Mehrotra",
+      "email": "anuja.ganakamehrotra43@example.com",
+      "phone": "+91 6455722495",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2026-05-17"
+    },
+    {
+      "id": "U-044",
+      "name": "Akshat Khanna",
+      "email": "akshat.khanna44@example.com",
+      "phone": "+91 9308426684",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2025-02-05"
+    },
+    {
+      "id": "U-045",
+      "name": "Subodh Dwivedi-Jha",
+      "email": "subodh.dwivedijha45@example.com",
+      "phone": "+91 6051224194",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2026-01-15"
+    },
+    {
+      "id": "U-046",
+      "name": "Tej Arora",
+      "email": "tej.arora46@example.com",
+      "phone": "+91 9932765549",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2025-08-14"
+    },
+    {
+      "id": "U-047",
+      "name": "Ramesh Guha",
+      "email": "ramesh.guha47@example.com",
+      "phone": "+91 8827734439",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Deactivated",
+      "joinedOn": "2023-07-15"
+    },
+    {
+      "id": "U-048",
+      "name": "Dinesh Patil",
+      "email": "dinesh.patil48@example.com",
+      "phone": "+91 9851305019",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2026-03-25"
+    },
+    {
+      "id": "U-049",
+      "name": "Baalagopaal Ganaka",
+      "email": "baalagopaal.ganaka49@example.com",
+      "phone": "+91 6260096969",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2024-11-11"
+    },
+    {
+      "id": "U-050",
+      "name": "Vedanga Khanna",
+      "email": "vedanga.khanna50@example.com",
+      "phone": "+91 9708191015",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2024-10-12"
+    },
+    {
+      "id": "U-051",
+      "name": "Acaryatanaya Acharya",
+      "email": "acaryatanaya.acharya51@example.com",
+      "phone": "+91 6358570601",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Deactivated",
+      "joinedOn": "2023-10-21"
+    },
+    {
+      "id": "U-052",
+      "name": "Chandra Shukla",
+      "email": "chandra.shukla52@example.com",
+      "phone": "+91 7963465450",
+      "role": "customer",
+      "zoneId": "ZN-003",
+      "status": "Active",
+      "joinedOn": "2025-11-18"
+    },
+    {
+      "id": "U-053",
+      "name": "Amrita Mukhopadhyay",
+      "email": "amrita.mukhopadhyay53@example.com",
+      "phone": "+91 7820987527",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2024-03-31"
+    },
+    {
+      "id": "U-054",
+      "name": "Pushti Ahluwalia",
+      "email": "pushti.ahluwalia54@example.com",
+      "phone": "+91 7481155434",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2024-12-22"
+    },
+    {
+      "id": "U-055",
+      "name": "Ojaswini Joshi",
+      "email": "ojaswini.joshi55@example.com",
+      "phone": "+91 7175328545",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2025-06-05"
+    },
+    {
+      "id": "U-056",
+      "name": "Amrita Prajapat",
+      "email": "amrita.prajapat56@example.com",
+      "phone": "+91 6892772892",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Deactivated",
+      "joinedOn": "2025-12-30"
+    },
+    {
+      "id": "U-057",
+      "name": "Dinkar Verma",
+      "email": "dinkar.verma57@example.com",
+      "phone": "+91 7455463605",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2023-05-01"
+    },
+    {
+      "id": "U-058",
+      "name": "Divya Sethi",
+      "email": "divya.sethi58@example.com",
+      "phone": "+91 8100657295",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2025-09-06"
+    },
+    {
+      "id": "U-059",
+      "name": "Basanti Gowda",
+      "email": "basanti.gowda59@example.com",
+      "phone": "+91 8854861121",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2023-08-28"
+    },
+    {
+      "id": "U-060",
+      "name": "Veda Sethi",
+      "email": "veda.sethi60@example.com",
+      "phone": "+91 9969479803",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2026-03-04"
+    },
+    {
+      "id": "U-061",
+      "name": "Sarada Gowda",
+      "email": "sarada.gowda61@example.com",
+      "phone": "+91 8543438449",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2025-03-22"
+    },
+    {
+      "id": "U-062",
+      "name": "Akshat Nambeesan",
+      "email": "akshat.nambeesan62@example.com",
+      "phone": "+91 8784763745",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2024-07-18"
+    },
+    {
+      "id": "U-063",
+      "name": "Marut Guneta",
+      "email": "marut.guneta63@example.com",
+      "phone": "+91 6746371074",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2024-06-03"
+    },
+    {
+      "id": "U-064",
+      "name": "Gita Tandon",
+      "email": "gita.tandon64@example.com",
+      "phone": "+91 9961005884",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2026-11-12"
+    },
+    {
+      "id": "U-065",
+      "name": "Lavanya Namboothiri",
+      "email": "lavanya.namboothiri65@example.com",
+      "phone": "+91 9000590554",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2024-08-29"
+    },
+    {
+      "id": "U-066",
+      "name": "Swami Mehra",
+      "email": "swami.mehra66@example.com",
+      "phone": "+91 6040582299",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2025-06-22"
+    },
+    {
+      "id": "U-067",
+      "name": "Chapala Mahajan",
+      "email": "chapala.mahajan67@example.com",
+      "phone": "+91 9912640309",
+      "role": "customer",
+      "zoneId": "ZN-004",
+      "status": "Active",
+      "joinedOn": "2026-03-18"
+    },
+    {
+      "id": "U-068",
+      "name": "Shresthi Chopra",
+      "email": "shresthi.chopra68@example.com",
+      "phone": "+91 6270631115",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2025-08-21"
+    },
+    {
+      "id": "U-069",
+      "name": "Deeksha Jangid",
+      "email": "deeksha.jangid69@example.com",
+      "phone": "+91 8707373862",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2023-08-31"
+    },
+    {
+      "id": "U-070",
+      "name": "Aishani Namboothiri",
+      "email": "aishani.namboothiri70@example.com",
+      "phone": "+91 7350075740",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2025-04-08"
+    },
+    {
+      "id": "U-071",
+      "name": "Keerti Johar",
+      "email": "keerti.johar71@example.com",
+      "phone": "+91 8250376480",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2025-05-14"
+    },
+    {
+      "id": "U-072",
+      "name": "Pranay Varma",
+      "email": "pranay.varma72@example.com",
+      "phone": "+91 7362929311",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2026-05-21"
+    },
+    {
+      "id": "U-073",
+      "name": "Tapan Arora",
+      "email": "tapan.arora73@example.com",
+      "phone": "+91 6750425567",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2024-06-19"
+    },
+    {
+      "id": "U-074",
+      "name": "Chandra Kaur",
+      "email": "chandra.kaur74@example.com",
+      "phone": "+91 6311100418",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2025-01-27"
+    },
+    {
+      "id": "U-075",
+      "name": "Diksha Jangid",
+      "email": "diksha.jangid75@example.com",
+      "phone": "+91 7948887168",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2023-08-30"
+    },
+    {
+      "id": "U-076",
+      "name": "Agrata Sinha",
+      "email": "agrata.sinha76@example.com",
+      "phone": "+91 8988508108",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2026-08-18"
+    },
+    {
+      "id": "U-077",
+      "name": "Sheela Jha",
+      "email": "sheela.jha77@example.com",
+      "phone": "+91 7992254981",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2026-06-29"
+    },
+    {
+      "id": "U-078",
+      "name": "Kanak Somayaji",
+      "email": "kanak.somayaji78@example.com",
+      "phone": "+91 9312264064",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2023-08-02"
+    },
+    {
+      "id": "U-079",
+      "name": "Sanya Mehrotra",
+      "email": "sanya.mehrotra79@example.com",
+      "phone": "+91 8643157911",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2024-07-10"
+    },
+    {
+      "id": "U-080",
+      "name": "Gotum Chaturvedi",
+      "email": "gotum.chaturvedi80@example.com",
+      "phone": "+91 7375756008",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2025-02-10"
+    },
+    {
+      "id": "U-081",
+      "name": "Girja Ganaka",
+      "email": "girja.ganaka81@example.com",
+      "phone": "+91 9948082026",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Deactivated",
+      "joinedOn": "2024-05-09"
+    },
+    {
+      "id": "U-082",
+      "name": "Agneya Namboothiri",
+      "email": "agneya.namboothiri82@example.com",
+      "phone": "+91 8177401696",
+      "role": "customer",
+      "zoneId": "ZN-005",
+      "status": "Active",
+      "joinedOn": "2024-04-11"
+    },
+    {
+      "id": "U-083",
+      "name": "Ujjwal Desai",
+      "email": "ujjwal.desai83@example.com",
+      "phone": "+91 7897345770",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Active",
+      "joinedOn": "2026-05-16"
+    },
+    {
+      "id": "U-084",
+      "name": "Agastya Menon",
+      "email": "agastya.menon84@example.com",
+      "phone": "+91 8554355273",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Active",
+      "joinedOn": "2023-01-13"
+    },
+    {
+      "id": "U-085",
+      "name": "Umang Bhat",
+      "email": "umang.bhat85@example.com",
+      "phone": "+91 7289368048",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Active",
+      "joinedOn": "2025-01-13"
+    },
+    {
+      "id": "U-086",
+      "name": "Karunanidhi Shukla",
+      "email": "karunanidhi.shukla86@example.com",
+      "phone": "+91 8718491726",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Active",
+      "joinedOn": "2024-10-12"
+    },
+    {
+      "id": "U-087",
+      "name": "Ujjwal Mehrotra",
+      "email": "ujjwal.mehrotra87@example.com",
+      "phone": "+91 9472900778",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Active",
+      "joinedOn": "2024-02-09"
+    },
+    {
+      "id": "U-088",
+      "name": "Dayaananda Chattopadhyay",
+      "email": "dayaananda.chattopadhyay88@example.com",
+      "phone": "+91 6228542271",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Active",
+      "joinedOn": "2024-06-26"
+    },
+    {
+      "id": "U-089",
+      "name": "Harita Nair",
+      "email": "harita.nair89@example.com",
+      "phone": "+91 8045680913",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Active",
+      "joinedOn": "2024-01-04"
+    },
+    {
+      "id": "U-090",
+      "name": "Chandrabhan Kapoor",
+      "email": "chandrabhan.kapoor90@example.com",
+      "phone": "+91 9544618126",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Deactivated",
+      "joinedOn": "2022-11-29"
+    },
+    {
+      "id": "U-091",
+      "name": "Rakesh Kaniyar",
+      "email": "rakesh.kaniyar91@example.com",
+      "phone": "+91 8086663070",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Active",
+      "joinedOn": "2024-09-19"
+    },
+    {
+      "id": "U-092",
+      "name": "Guru Bandopadhyay",
+      "email": "guru.bandopadhyay92@example.com",
+      "phone": "+91 8128346061",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Active",
+      "joinedOn": "2023-12-08"
+    },
+    {
+      "id": "U-093",
+      "name": "Rajinder Devar",
+      "email": "rajinder.devar93@example.com",
+      "phone": "+91 8953681828",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Active",
+      "joinedOn": "2024-06-24"
+    },
+    {
+      "id": "U-094",
+      "name": "Bala Guneta",
+      "email": "bala.guneta94@example.com",
+      "phone": "+91 9807832259",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Active",
+      "joinedOn": "2025-02-19"
+    },
+    {
+      "id": "U-095",
+      "name": "Kanaka Guneta",
+      "email": "kanaka.guneta95@example.com",
+      "phone": "+91 9787407341",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Deactivated",
+      "joinedOn": "2025-10-31"
+    },
+    {
+      "id": "U-096",
+      "name": "Mangalya Acharya",
+      "email": "mangalya.acharya96@example.com",
+      "phone": "+91 6825881853",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Deactivated",
+      "joinedOn": "2024-10-17"
+    },
+    {
+      "id": "U-097",
+      "name": "Kamalesh Suthar",
+      "email": "kamalesh.suthar97@example.com",
+      "phone": "+91 6107925456",
+      "role": "customer",
+      "zoneId": "ZN-006",
+      "status": "Active",
+      "joinedOn": "2025-03-02"
+    }
+  ],
+  "meters": [
+    {
+      "id": "M-1001",
+      "ownerId": "U-008",
+      "ownerName": "Achyut Talwar",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "854 Dwivedi Port, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 3229,
+      "lastReadingAt": "2026-11-23T10:03:57.989Z",
+      "installedDate": "2022-09-18",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1002",
+      "ownerId": "U-008",
+      "ownerName": "Achyut Talwar",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "8668 Ameyatma Rest, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 7026,
+      "lastReadingAt": "2026-11-23T22:32:10.408Z",
+      "installedDate": "2024-07-15",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1003",
+      "ownerId": "U-009",
+      "ownerName": "Anshula Panicker-Gandhi",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "22179 Chanda Well, Mangalore",
+      "status": "Deactivated",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2025-02-27",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1004",
+      "ownerId": "U-010",
+      "ownerName": "Aatmaja Ahuja",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "6520 Eshana Centers, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 3097,
+      "lastReadingAt": "2026-11-23T09:24:06.923Z",
+      "installedDate": "2026-04-23",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1005",
+      "ownerId": "U-011",
+      "ownerName": "Avani Mahajan",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "653 Aditya Walk, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 3164,
+      "lastReadingAt": "2026-11-23T09:10:19.056Z",
+      "installedDate": "2025-05-03",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1006",
+      "ownerId": "U-012",
+      "ownerName": "Elakshi Saini",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "2529 Chinmayanand Falls, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 5696,
+      "lastReadingAt": "2026-11-23T15:01:00.223Z",
+      "installedDate": "2026-09-09",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1007",
+      "ownerId": "U-013",
+      "ownerName": "Manisha Kaur",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "777 Garud Crescent, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 6041,
+      "lastReadingAt": "2026-11-23T06:42:36.554Z",
+      "installedDate": "2022-09-27",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1008",
+      "ownerId": "U-014",
+      "ownerName": "Manjusha Banerjee",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "92006 Guneta Glens, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 2016,
+      "lastReadingAt": "2026-11-24T01:47:18.561Z",
+      "installedDate": "2023-09-04",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1009",
+      "ownerId": "U-015",
+      "ownerName": "Dipali Kaniyar",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "625 Bhishma Squares, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 4670,
+      "lastReadingAt": "2026-11-23T10:23:05.573Z",
+      "installedDate": "2024-01-05",
+      "tariffCategory": "Industrial"
+    },
+    {
+      "id": "M-1010",
+      "ownerId": "U-016",
+      "ownerName": "Diptendu Prajapat",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "8960 Daevika Square, Mangalore",
+      "status": "Deactivated",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2026-01-11",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1011",
+      "ownerId": "U-017",
+      "ownerName": "Girik Talwar",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "1056 Gouranga Light, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 7352,
+      "lastReadingAt": "2026-11-23T18:26:19.634Z",
+      "installedDate": "2026-08-11",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1012",
+      "ownerId": "U-018",
+      "ownerName": "Ananda Varman",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "42441 Chandra Shores, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 2276,
+      "lastReadingAt": "2026-11-23T19:22:15.818Z",
+      "installedDate": "2026-08-17",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1013",
+      "ownerId": "U-019",
+      "ownerName": "Agneya Kakkar",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "139 Panicker Valley, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 931,
+      "lastReadingAt": "2026-11-23T14:58:14.957Z",
+      "installedDate": "2022-12-21",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1014",
+      "ownerId": "U-020",
+      "ownerName": "Prasad Jangid",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "642 Girja Grove, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 5454,
+      "lastReadingAt": "2026-11-23T22:09:02.515Z",
+      "installedDate": "2025-12-19",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1015",
+      "ownerId": "U-021",
+      "ownerName": "Uma Verma",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "196 Mahajan Village, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 5454,
+      "lastReadingAt": "2026-11-23T07:27:55.006Z",
+      "installedDate": "2024-09-29",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1016",
+      "ownerId": "U-021",
+      "ownerName": "Uma Verma",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "434 Himadri Freeway, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 4325,
+      "lastReadingAt": "2026-11-23T23:14:04.961Z",
+      "installedDate": "2023-08-09",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1017",
+      "ownerId": "U-022",
+      "ownerName": "Sitara Joshi",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "8231 Aaratrika Bypass, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 5860,
+      "lastReadingAt": "2026-11-23T19:23:17.039Z",
+      "installedDate": "2025-09-09",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1018",
+      "ownerId": "U-022",
+      "ownerName": "Sitara Joshi",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "address": "79743 Somayaji Mission, Mangalore",
+      "status": "Active",
+      "lastReadingKwh": 7909,
+      "lastReadingAt": "2026-11-23T08:27:38.008Z",
+      "installedDate": "2022-09-06",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1019",
+      "ownerId": "U-023",
+      "ownerName": "Malti Bhattacharya",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "957 Deeptimoyee Greens, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 5720,
+      "lastReadingAt": "2026-11-24T01:31:06.843Z",
+      "installedDate": "2026-10-15",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1020",
+      "ownerId": "U-024",
+      "ownerName": "Basanti Bhat",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "44242 Mohana Hills, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 1751,
+      "lastReadingAt": "2026-11-23T20:40:07.890Z",
+      "installedDate": "2022-03-29",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1021",
+      "ownerId": "U-025",
+      "ownerName": "Chandira Asan",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "5054 Kaniyar Meadows, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 3710,
+      "lastReadingAt": "2026-11-24T01:04:13.107Z",
+      "installedDate": "2026-04-25",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1022",
+      "ownerId": "U-026",
+      "ownerName": "Lavanya Mishra",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "20390 Trivedi Mountains, Udupi",
+      "status": "Pending",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2024-06-20",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1023",
+      "ownerId": "U-027",
+      "ownerName": "Javas Bandopadhyay",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "8280 Anjushri Courts, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 4598,
+      "lastReadingAt": "2026-11-23T22:46:44.220Z",
+      "installedDate": "2025-06-16",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1024",
+      "ownerId": "U-028",
+      "ownerName": "Mukul Nayar",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "70295 Chandini Fort, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 8796,
+      "lastReadingAt": "2026-11-24T02:32:22.147Z",
+      "installedDate": "2024-08-25",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1025",
+      "ownerId": "U-029",
+      "ownerName": "Rita Khatri",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "8044 Embranthiri Cliffs, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 2580,
+      "lastReadingAt": "2026-11-23T05:49:43.256Z",
+      "installedDate": "2024-03-12",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1026",
+      "ownerId": "U-030",
+      "ownerName": "Rati Nayar",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "52693 Chandi Street, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 7528,
+      "lastReadingAt": "2026-11-23T07:32:01.939Z",
+      "installedDate": "2024-01-30",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1027",
+      "ownerId": "U-031",
+      "ownerName": "Giriraj Khan",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "179 Niro Forges, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 6521,
+      "lastReadingAt": "2026-11-24T00:14:02.374Z",
+      "installedDate": "2023-04-07",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1028",
+      "ownerId": "U-032",
+      "ownerName": "Shubhaprada Kapoor",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "515 Tandon Orchard, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 809,
+      "lastReadingAt": "2026-11-24T02:18:37.096Z",
+      "installedDate": "2022-12-14",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1029",
+      "ownerId": "U-032",
+      "ownerName": "Shubhaprada Kapoor",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "433 Gorakhanatha Expressway, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 3598,
+      "lastReadingAt": "2026-11-23T16:16:25.749Z",
+      "installedDate": "2025-07-12",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1030",
+      "ownerId": "U-033",
+      "ownerName": "Veda Gupta",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "5760 Kumuda Dam, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 4675,
+      "lastReadingAt": "2026-11-23T22:00:49.504Z",
+      "installedDate": "2023-12-18",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1031",
+      "ownerId": "U-033",
+      "ownerName": "Veda Gupta",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "9977 Menon Heights, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 4749,
+      "lastReadingAt": "2026-11-23T19:18:27.485Z",
+      "installedDate": "2022-04-22",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1032",
+      "ownerId": "U-034",
+      "ownerName": "Tanirika Singh",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "853 Vaishnavi Walks, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 7488,
+      "lastReadingAt": "2026-11-24T01:53:40.513Z",
+      "installedDate": "2026-07-31",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1033",
+      "ownerId": "U-035",
+      "ownerName": "Giri Khanna",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "779 Kaul Camp, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 7027,
+      "lastReadingAt": "2026-11-23T16:57:26.771Z",
+      "installedDate": "2024-05-26",
+      "tariffCategory": "Industrial"
+    },
+    {
+      "id": "M-1034",
+      "ownerId": "U-036",
+      "ownerName": "Akshaj Shukla",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "4323 Joshi Run, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 2719,
+      "lastReadingAt": "2026-11-23T21:30:59.964Z",
+      "installedDate": "2026-02-22",
+      "tariffCategory": "Industrial"
+    },
+    {
+      "id": "M-1035",
+      "ownerId": "U-037",
+      "ownerName": "Aagam Talwar",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "address": "858 Somayaji Village, Udupi",
+      "status": "Active",
+      "lastReadingKwh": 1591,
+      "lastReadingAt": "2026-11-23T07:31:57.211Z",
+      "installedDate": "2022-02-15",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1036",
+      "ownerId": "U-038",
+      "ownerName": "Omana Shukla",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "64453 Jangid-Iyer Fort, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 3739,
+      "lastReadingAt": "2026-11-23T11:08:34.954Z",
+      "installedDate": "2025-03-12",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1037",
+      "ownerId": "U-039",
+      "ownerName": "Acaryatanaya Bhattathiri",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "42733 Dinakar Shoal, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 6307,
+      "lastReadingAt": "2026-11-23T06:55:26.370Z",
+      "installedDate": "2026-07-15",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1038",
+      "ownerId": "U-039",
+      "ownerName": "Acaryatanaya Bhattathiri",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "46979 Mishra Way, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 2481,
+      "lastReadingAt": "2026-11-23T21:05:36.448Z",
+      "installedDate": "2024-03-05",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1039",
+      "ownerId": "U-040",
+      "ownerName": "Swapnil Reddy",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "350 Mehra Springs, Surathkal",
+      "status": "Deactivated",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2026-09-28",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1040",
+      "ownerId": "U-041",
+      "ownerName": "Mani Khatri",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "3047 Kaul Bridge, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 8931,
+      "lastReadingAt": "2026-11-23T14:02:22.917Z",
+      "installedDate": "2024-07-02",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1041",
+      "ownerId": "U-042",
+      "ownerName": "Bhardwaj Panicker",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "143 Dubashi Ville, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 1950,
+      "lastReadingAt": "2026-11-23T21:30:19.675Z",
+      "installedDate": "2024-08-02",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1042",
+      "ownerId": "U-043",
+      "ownerName": "Anuja Ganaka-Mehrotra",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "94979 Acharya Forest, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 951,
+      "lastReadingAt": "2026-11-24T03:57:06.099Z",
+      "installedDate": "2024-06-03",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1043",
+      "ownerId": "U-043",
+      "ownerName": "Anuja Ganaka-Mehrotra",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "542 Bhattathiri Extensions, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 1712,
+      "lastReadingAt": "2026-11-23T10:54:52.095Z",
+      "installedDate": "2023-12-17",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1044",
+      "ownerId": "U-044",
+      "ownerName": "Akshat Khanna",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "8984 Dwivedi Ridges, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 1786,
+      "lastReadingAt": "2026-11-23T18:54:52.605Z",
+      "installedDate": "2024-06-01",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1045",
+      "ownerId": "U-044",
+      "ownerName": "Akshat Khanna",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "39160 Abbott Manors, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 4393,
+      "lastReadingAt": "2026-11-23T14:09:04.505Z",
+      "installedDate": "2026-02-01",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1046",
+      "ownerId": "U-045",
+      "ownerName": "Subodh Dwivedi-Jha",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "980 Patel Squares, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 2860,
+      "lastReadingAt": "2026-11-23T16:52:37.028Z",
+      "installedDate": "2022-01-06",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1047",
+      "ownerId": "U-046",
+      "ownerName": "Tej Arora",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "11863 Vasudev Station, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 3057,
+      "lastReadingAt": "2026-11-24T03:53:02.437Z",
+      "installedDate": "2024-12-02",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1048",
+      "ownerId": "U-047",
+      "ownerName": "Ramesh Guha",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "106 Jagdish Course, Surathkal",
+      "status": "Deactivated",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2025-01-15",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1049",
+      "ownerId": "U-048",
+      "ownerName": "Dinesh Patil",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "1547 Vaishno Ville, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 5290,
+      "lastReadingAt": "2026-11-23T16:17:31.260Z",
+      "installedDate": "2025-01-05",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1050",
+      "ownerId": "U-049",
+      "ownerName": "Baalagopaal Ganaka",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "2482 Pramila Ferry, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 1573,
+      "lastReadingAt": "2026-11-23T21:09:53.641Z",
+      "installedDate": "2022-02-12",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1051",
+      "ownerId": "U-049",
+      "ownerName": "Baalagopaal Ganaka",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "5357 Enakshi Viaduct, Surathkal",
+      "status": "Pending",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2026-01-16",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1052",
+      "ownerId": "U-050",
+      "ownerName": "Vedanga Khanna",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "2044 Dwaipayana Villages, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 4144,
+      "lastReadingAt": "2026-11-23T15:07:31.756Z",
+      "installedDate": "2024-07-28",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1053",
+      "ownerId": "U-050",
+      "ownerName": "Vedanga Khanna",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "6532 Chitrali Vista, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 2389,
+      "lastReadingAt": "2026-11-24T01:27:09.549Z",
+      "installedDate": "2024-12-18",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1054",
+      "ownerId": "U-051",
+      "ownerName": "Acaryatanaya Acharya",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "8353 Bilva Shoal, Surathkal",
+      "status": "Deactivated",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2026-06-29",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1055",
+      "ownerId": "U-052",
+      "ownerName": "Chandra Shukla",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "address": "75038 Mehrotra Orchard, Surathkal",
+      "status": "Active",
+      "lastReadingKwh": 5002,
+      "lastReadingAt": "2026-11-23T05:00:08.197Z",
+      "installedDate": "2024-12-16",
+      "tariffCategory": "Industrial"
+    },
+    {
+      "id": "M-1056",
+      "ownerId": "U-053",
+      "ownerName": "Amrita Mukhopadhyay",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "196 Guha Stravenue, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 4472,
+      "lastReadingAt": "2026-11-23T09:13:37.749Z",
+      "installedDate": "2025-10-05",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1057",
+      "ownerId": "U-053",
+      "ownerName": "Amrita Mukhopadhyay",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "210 Ahuja Estate, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 2258,
+      "lastReadingAt": "2026-11-24T04:17:24.269Z",
+      "installedDate": "2025-03-21",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1058",
+      "ownerId": "U-054",
+      "ownerName": "Pushti Ahluwalia",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "45318 Verma Ridge, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 3543,
+      "lastReadingAt": "2026-11-23T07:55:19.422Z",
+      "installedDate": "2024-09-23",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1059",
+      "ownerId": "U-055",
+      "ownerName": "Ojaswini Joshi",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "6972 Charuvrat Pass, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 6803,
+      "lastReadingAt": "2026-11-23T05:57:09.163Z",
+      "installedDate": "2023-11-21",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1060",
+      "ownerId": "U-056",
+      "ownerName": "Amrita Prajapat",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "136 Prajapat Flat, Mulki",
+      "status": "Deactivated",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2023-03-07",
+      "tariffCategory": "Industrial"
+    },
+    {
+      "id": "M-1061",
+      "ownerId": "U-057",
+      "ownerName": "Dinkar Verma",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "789 Nehru Neck, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 1488,
+      "lastReadingAt": "2026-11-23T21:25:38.359Z",
+      "installedDate": "2023-12-16",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1062",
+      "ownerId": "U-058",
+      "ownerName": "Divya Sethi",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "2458 Kannan Via, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 2362,
+      "lastReadingAt": "2026-11-23T17:22:15.414Z",
+      "installedDate": "2022-02-12",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1063",
+      "ownerId": "U-059",
+      "ownerName": "Basanti Gowda",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "9656 Kapoor Bridge, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 3853,
+      "lastReadingAt": "2026-11-23T10:17:27.610Z",
+      "installedDate": "2024-12-05",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1064",
+      "ownerId": "U-059",
+      "ownerName": "Basanti Gowda",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "107 Trilokanath Loaf, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 1847,
+      "lastReadingAt": "2026-11-23T18:18:32.617Z",
+      "installedDate": "2025-08-02",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1065",
+      "ownerId": "U-060",
+      "ownerName": "Veda Sethi",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "9120 Bhattacharya Junction, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 8863,
+      "lastReadingAt": "2026-11-24T03:05:22.701Z",
+      "installedDate": "2023-01-27",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1066",
+      "ownerId": "U-061",
+      "ownerName": "Sarada Gowda",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "2922 Somayaji Track, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 2640,
+      "lastReadingAt": "2026-11-23T08:38:02.328Z",
+      "installedDate": "2024-02-02",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1067",
+      "ownerId": "U-061",
+      "ownerName": "Sarada Gowda",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "744 Pillai Meadows, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 2092,
+      "lastReadingAt": "2026-11-23T12:43:03.432Z",
+      "installedDate": "2025-04-07",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1068",
+      "ownerId": "U-062",
+      "ownerName": "Akshat Nambeesan",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "393 Sharma-Verma Squares, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 3221,
+      "lastReadingAt": "2026-11-23T18:42:16.236Z",
+      "installedDate": "2026-07-10",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1069",
+      "ownerId": "U-062",
+      "ownerName": "Akshat Nambeesan",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "74317 Ekalavya Street, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 1878,
+      "lastReadingAt": "2026-11-23T10:06:41.765Z",
+      "installedDate": "2023-06-05",
+      "tariffCategory": "Industrial"
+    },
+    {
+      "id": "M-1070",
+      "ownerId": "U-063",
+      "ownerName": "Marut Guneta",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "6730 Gopi Track, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 7752,
+      "lastReadingAt": "2026-11-23T16:27:02.514Z",
+      "installedDate": "2022-02-20",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1071",
+      "ownerId": "U-064",
+      "ownerName": "Gita Tandon",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "54669 Shakti Lodge, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 5242,
+      "lastReadingAt": "2026-11-23T11:18:47.991Z",
+      "installedDate": "2022-07-02",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1072",
+      "ownerId": "U-065",
+      "ownerName": "Lavanya Namboothiri",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "54160 Vrund Vista, Mulki",
+      "status": "Pending",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2023-02-22",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1073",
+      "ownerId": "U-066",
+      "ownerName": "Swami Mehra",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "2575 Anjushri Crest, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 7827,
+      "lastReadingAt": "2026-11-23T07:53:56.353Z",
+      "installedDate": "2024-03-27",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1074",
+      "ownerId": "U-067",
+      "ownerName": "Chapala Mahajan",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "address": "27116 Digambar Common, Mulki",
+      "status": "Active",
+      "lastReadingKwh": 7308,
+      "lastReadingAt": "2026-11-23T15:10:19.711Z",
+      "installedDate": "2023-08-17",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1075",
+      "ownerId": "U-068",
+      "ownerName": "Shresthi Chopra",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "16327 Tanushri Estates, Padil",
+      "status": "Deactivated",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2026-10-19",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1076",
+      "ownerId": "U-069",
+      "ownerName": "Deeksha Jangid",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "4367 Drona Circle, Padil",
+      "status": "Active",
+      "lastReadingKwh": 8860,
+      "lastReadingAt": "2026-11-23T19:02:43.053Z",
+      "installedDate": "2023-12-09",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1077",
+      "ownerId": "U-070",
+      "ownerName": "Aishani Namboothiri",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "1843 Bhagwati Course, Padil",
+      "status": "Pending",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2026-01-09",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1078",
+      "ownerId": "U-070",
+      "ownerName": "Aishani Namboothiri",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "40859 Patel Skyway, Padil",
+      "status": "Active",
+      "lastReadingKwh": 1242,
+      "lastReadingAt": "2026-11-23T15:44:51.796Z",
+      "installedDate": "2026-11-23",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1079",
+      "ownerId": "U-071",
+      "ownerName": "Keerti Johar",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "963 Aarya Field, Padil",
+      "status": "Active",
+      "lastReadingKwh": 1364,
+      "lastReadingAt": "2026-11-24T00:28:27.887Z",
+      "installedDate": "2022-02-24",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1080",
+      "ownerId": "U-072",
+      "ownerName": "Pranay Varma",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "6300 Dwivedi Tunnel, Padil",
+      "status": "Active",
+      "lastReadingKwh": 6343,
+      "lastReadingAt": "2026-11-23T20:01:06.983Z",
+      "installedDate": "2026-08-04",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1081",
+      "ownerId": "U-073",
+      "ownerName": "Tapan Arora",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "354 Chitrangada Causeway, Padil",
+      "status": "Active",
+      "lastReadingKwh": 7860,
+      "lastReadingAt": "2026-11-23T08:00:13.817Z",
+      "installedDate": "2022-04-14",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1082",
+      "ownerId": "U-074",
+      "ownerName": "Chandra Kaur",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "53739 Bhattathiri Centers, Padil",
+      "status": "Active",
+      "lastReadingKwh": 3688,
+      "lastReadingAt": "2026-11-23T09:48:30.113Z",
+      "installedDate": "2026-02-19",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1083",
+      "ownerId": "U-074",
+      "ownerName": "Chandra Kaur",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "22996 Chandni Estates, Padil",
+      "status": "Active",
+      "lastReadingKwh": 2677,
+      "lastReadingAt": "2026-11-23T09:46:16.951Z",
+      "installedDate": "2024-09-24",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1084",
+      "ownerId": "U-075",
+      "ownerName": "Diksha Jangid",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "1463 Menon Flats, Padil",
+      "status": "Active",
+      "lastReadingKwh": 5573,
+      "lastReadingAt": "2026-11-23T21:44:36.125Z",
+      "installedDate": "2025-11-24",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1085",
+      "ownerId": "U-076",
+      "ownerName": "Agrata Sinha",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "4710 Reddy Place, Padil",
+      "status": "Active",
+      "lastReadingKwh": 7211,
+      "lastReadingAt": "2026-11-23T23:38:46.389Z",
+      "installedDate": "2025-10-21",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1086",
+      "ownerId": "U-076",
+      "ownerName": "Agrata Sinha",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "964 Talwar Streets, Padil",
+      "status": "Active",
+      "lastReadingKwh": 3668,
+      "lastReadingAt": "2026-11-23T23:16:01.608Z",
+      "installedDate": "2023-03-23",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1087",
+      "ownerId": "U-077",
+      "ownerName": "Sheela Jha",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "322 Iyer Streets, Padil",
+      "status": "Active",
+      "lastReadingKwh": 3266,
+      "lastReadingAt": "2026-11-23T09:31:17.744Z",
+      "installedDate": "2024-10-09",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1088",
+      "ownerId": "U-077",
+      "ownerName": "Sheela Jha",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "8190 Pilla Via, Padil",
+      "status": "Active",
+      "lastReadingKwh": 7740,
+      "lastReadingAt": "2026-11-23T14:07:40.128Z",
+      "installedDate": "2024-10-22",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1089",
+      "ownerId": "U-078",
+      "ownerName": "Kanak Somayaji",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "72814 Mukhopadhyay Meadows, Padil",
+      "status": "Active",
+      "lastReadingKwh": 1719,
+      "lastReadingAt": "2026-11-23T23:32:18.413Z",
+      "installedDate": "2026-08-19",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1090",
+      "ownerId": "U-079",
+      "ownerName": "Sanya Mehrotra",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "72887 Chandramani Spring, Padil",
+      "status": "Active",
+      "lastReadingKwh": 3205,
+      "lastReadingAt": "2026-11-23T18:15:30.706Z",
+      "installedDate": "2022-11-08",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1091",
+      "ownerId": "U-080",
+      "ownerName": "Gotum Chaturvedi",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "5645 Ahuja Streets, Padil",
+      "status": "Active",
+      "lastReadingKwh": 5582,
+      "lastReadingAt": "2026-11-23T21:10:24.704Z",
+      "installedDate": "2023-08-31",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1092",
+      "ownerId": "U-081",
+      "ownerName": "Girja Ganaka",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "4144 Eshita Shoals, Padil",
+      "status": "Deactivated",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2023-07-28",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1093",
+      "ownerId": "U-081",
+      "ownerName": "Girja Ganaka",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "6862 Menon Forest, Padil",
+      "status": "Deactivated",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2026-09-20",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1094",
+      "ownerId": "U-082",
+      "ownerName": "Agneya Namboothiri",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "address": "6794 Deeptanshu Motorway, Padil",
+      "status": "Active",
+      "lastReadingKwh": 8522,
+      "lastReadingAt": "2026-11-24T01:13:24.885Z",
+      "installedDate": "2024-03-11",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1095",
+      "ownerId": "U-083",
+      "ownerName": "Ujjwal Desai",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "99794 Iyengar Roads, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 6623,
+      "lastReadingAt": "2026-11-24T00:20:12.472Z",
+      "installedDate": "2023-04-28",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1096",
+      "ownerId": "U-084",
+      "ownerName": "Agastya Menon",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "72503 Kaur Keys, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 7351,
+      "lastReadingAt": "2026-11-23T08:26:23.821Z",
+      "installedDate": "2025-02-24",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1097",
+      "ownerId": "U-084",
+      "ownerName": "Agastya Menon",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "665 Embranthiri Islands, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 8735,
+      "lastReadingAt": "2026-11-24T01:07:55.839Z",
+      "installedDate": "2023-11-28",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1098",
+      "ownerId": "U-085",
+      "ownerName": "Umang Bhat",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "637 Lakshminath Parkway, Bajpe",
+      "status": "Deactivated",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2021-12-12",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1099",
+      "ownerId": "U-085",
+      "ownerName": "Umang Bhat",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "797 Nayar Path, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 992,
+      "lastReadingAt": "2026-11-23T15:09:57.974Z",
+      "installedDate": "2024-11-13",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1100",
+      "ownerId": "U-086",
+      "ownerName": "Karunanidhi Shukla",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "456 Guneta Dale, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 4606,
+      "lastReadingAt": "2026-11-23T13:58:44.969Z",
+      "installedDate": "2025-02-09",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1101",
+      "ownerId": "U-086",
+      "ownerName": "Karunanidhi Shukla",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "37415 Ahluwalia Bridge, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 5208,
+      "lastReadingAt": "2026-11-23T16:27:40.632Z",
+      "installedDate": "2023-06-13",
+      "tariffCategory": "Industrial"
+    },
+    {
+      "id": "M-1102",
+      "ownerId": "U-087",
+      "ownerName": "Ujjwal Mehrotra",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "99183 Bhadra Crossing, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 8271,
+      "lastReadingAt": "2026-11-23T16:11:15.040Z",
+      "installedDate": "2023-06-13",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1103",
+      "ownerId": "U-088",
+      "ownerName": "Dayaananda Chattopadhyay",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "9131 Swarnalata Expressway, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 6974,
+      "lastReadingAt": "2026-11-23T22:05:24.478Z",
+      "installedDate": "2025-10-13",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1104",
+      "ownerId": "U-088",
+      "ownerName": "Dayaananda Chattopadhyay",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "183 Triloki Mall, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 6992,
+      "lastReadingAt": "2026-11-23T22:51:06.571Z",
+      "installedDate": "2024-09-21",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1105",
+      "ownerId": "U-089",
+      "ownerName": "Harita Nair",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "42195 Deepankar Causeway, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 7753,
+      "lastReadingAt": "2026-11-23T10:44:44.614Z",
+      "installedDate": "2022-11-25",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1106",
+      "ownerId": "U-089",
+      "ownerName": "Harita Nair",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "903 Embranthiri Hill, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 1981,
+      "lastReadingAt": "2026-11-23T14:08:11.516Z",
+      "installedDate": "2024-02-04",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1107",
+      "ownerId": "U-090",
+      "ownerName": "Chandrabhan Kapoor",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "94165 Aadi Rapid, Bajpe",
+      "status": "Deactivated",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2023-07-10",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1108",
+      "ownerId": "U-091",
+      "ownerName": "Rakesh Kaniyar",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "576 Chanakya Heights, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 6560,
+      "lastReadingAt": "2026-11-23T21:55:38.920Z",
+      "installedDate": "2022-09-18",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1109",
+      "ownerId": "U-091",
+      "ownerName": "Rakesh Kaniyar",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "296 Vasudha Inlet, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 5012,
+      "lastReadingAt": "2026-11-23T11:07:11.126Z",
+      "installedDate": "2026-03-12",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1110",
+      "ownerId": "U-092",
+      "ownerName": "Guru Bandopadhyay",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "83424 Shakuntala Ramp, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 1148,
+      "lastReadingAt": "2026-11-23T11:25:22.105Z",
+      "installedDate": "2026-05-12",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1111",
+      "ownerId": "U-093",
+      "ownerName": "Rajinder Devar",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "5603 Bhattacharya Dale, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 5685,
+      "lastReadingAt": "2026-11-23T17:24:10.925Z",
+      "installedDate": "2024-03-08",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1112",
+      "ownerId": "U-094",
+      "ownerName": "Bala Guneta",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "94386 Nair Brooks, Bajpe",
+      "status": "Pending",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2025-01-19",
+      "tariffCategory": "Commercial"
+    },
+    {
+      "id": "M-1113",
+      "ownerId": "U-095",
+      "ownerName": "Kanaka Guneta",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "635 Jha Route, Bajpe",
+      "status": "Deactivated",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2022-10-30",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1114",
+      "ownerId": "U-096",
+      "ownerName": "Mangalya Acharya",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "2641 Adhrit Key, Bajpe",
+      "status": "Deactivated",
+      "lastReadingKwh": null,
+      "lastReadingAt": null,
+      "installedDate": "2026-07-14",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1115",
+      "ownerId": "U-097",
+      "ownerName": "Kamalesh Suthar",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "942 Nehru Spring, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 5865,
+      "lastReadingAt": "2026-11-23T16:59:02.450Z",
+      "installedDate": "2025-01-20",
+      "tariffCategory": "Domestic"
+    },
+    {
+      "id": "M-1116",
+      "ownerId": "U-097",
+      "ownerName": "Kamalesh Suthar",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "address": "88862 Khanna Route, Bajpe",
+      "status": "Active",
+      "lastReadingKwh": 4411,
+      "lastReadingAt": "2026-11-23T16:54:31.193Z",
+      "installedDate": "2023-09-13",
+      "tariffCategory": "Commercial"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "AL-001",
+      "meterId": "M-1101",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "type": "High consumption",
+      "severity": "Critical",
+      "status": "Open",
+      "message": "High consumption on M-1101 in Bajpe",
+      "createdAt": "2026-11-23T23:04:42.780Z"
+    },
+    {
+      "id": "AL-002",
+      "meterId": "M-1099",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "type": "Abnormal reading",
+      "severity": "Critical",
+      "status": "Acknowledged",
+      "message": "Abnormal reading on M-1099 in Bajpe",
+      "createdAt": "2026-11-23T21:06:06.887Z"
+    },
+    {
+      "id": "AL-003",
+      "meterId": "M-1083",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "type": "High consumption",
+      "severity": "Critical",
+      "status": "Open",
+      "message": "High consumption on M-1083 in Padil",
+      "createdAt": "2026-11-23T05:23:20.183Z"
+    },
+    {
+      "id": "AL-004",
+      "meterId": "M-1087",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "type": "Low consumption",
+      "severity": "Info",
+      "status": "Open",
+      "message": "Low consumption on M-1087 in Padil",
+      "createdAt": "2026-11-21T20:15:49.247Z"
+    },
+    {
+      "id": "AL-005",
+      "meterId": "M-1007",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "type": "High consumption",
+      "severity": "Warning",
+      "status": "Open",
+      "message": "High consumption on M-1007 in Mangalore",
+      "createdAt": "2026-11-21T14:22:29.160Z"
+    },
+    {
+      "id": "AL-006",
+      "meterId": "M-1078",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "type": "Low consumption",
+      "severity": "Info",
+      "status": "Open",
+      "message": "Low consumption on M-1078 in Padil",
+      "createdAt": "2026-11-21T11:52:21.271Z"
+    },
+    {
+      "id": "AL-007",
+      "meterId": "M-1013",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "type": "High consumption",
+      "severity": "Critical",
+      "status": "Open",
+      "message": "High consumption on M-1013 in Mangalore",
+      "createdAt": "2026-11-21T03:40:19.328Z"
+    },
+    {
+      "id": "AL-008",
+      "meterId": "M-1043",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "type": "Inactive meter",
+      "severity": "Warning",
+      "status": "Open",
+      "message": "Inactive meter on M-1043 in Surathkal",
+      "createdAt": "2026-11-20T17:56:11.781Z"
+    },
+    {
+      "id": "AL-009",
+      "meterId": "M-1083",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "type": "Abnormal reading",
+      "severity": "Warning",
+      "status": "Resolved",
+      "message": "Abnormal reading on M-1083 in Padil",
+      "createdAt": "2026-11-20T08:24:34.657Z"
+    },
+    {
+      "id": "AL-010",
+      "meterId": "M-1067",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "type": "High consumption",
+      "severity": "Critical",
+      "status": "Resolved",
+      "message": "High consumption on M-1067 in Mulki",
+      "createdAt": "2026-11-19T17:16:54.646Z"
+    },
+    {
+      "id": "AL-011",
+      "meterId": "M-1067",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "type": "High consumption",
+      "severity": "Critical",
+      "status": "Open",
+      "message": "High consumption on M-1067 in Mulki",
+      "createdAt": "2026-11-18T13:06:31.484Z"
+    },
+    {
+      "id": "AL-012",
+      "meterId": "M-1088",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "type": "High consumption",
+      "severity": "Critical",
+      "status": "Resolved",
+      "message": "High consumption on M-1088 in Padil",
+      "createdAt": "2026-11-18T10:45:21.715Z"
+    },
+    {
+      "id": "AL-013",
+      "meterId": "M-1076",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "type": "Inactive meter",
+      "severity": "Warning",
+      "status": "Resolved",
+      "message": "Inactive meter on M-1076 in Padil",
+      "createdAt": "2026-11-17T14:28:00.544Z"
+    },
+    {
+      "id": "AL-014",
+      "meterId": "M-1006",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "type": "Inactive meter",
+      "severity": "Warning",
+      "status": "Open",
+      "message": "Inactive meter on M-1006 in Mangalore",
+      "createdAt": "2026-11-17T03:27:22.409Z"
+    },
+    {
+      "id": "AL-015",
+      "meterId": "M-1047",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "type": "Tamper detected",
+      "severity": "Critical",
+      "status": "Open",
+      "message": "Tamper detected on M-1047 in Surathkal",
+      "createdAt": "2026-11-16T18:39:25.717Z"
+    },
+    {
+      "id": "AL-016",
+      "meterId": "M-1047",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "type": "Tamper detected",
+      "severity": "Critical",
+      "status": "Open",
+      "message": "Tamper detected on M-1047 in Surathkal",
+      "createdAt": "2026-11-16T07:46:19.754Z"
+    },
+    {
+      "id": "AL-017",
+      "meterId": "M-1061",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "type": "High consumption",
+      "severity": "Critical",
+      "status": "Open",
+      "message": "High consumption on M-1061 in Mulki",
+      "createdAt": "2026-11-16T00:28:03.105Z"
+    },
+    {
+      "id": "AL-018",
+      "meterId": "M-1064",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "type": "Abnormal reading",
+      "severity": "Critical",
+      "status": "Resolved",
+      "message": "Abnormal reading on M-1064 in Mulki",
+      "createdAt": "2026-11-12T17:58:26.808Z"
+    },
+    {
+      "id": "AL-019",
+      "meterId": "M-1036",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "type": "Tamper detected",
+      "severity": "Critical",
+      "status": "Acknowledged",
+      "message": "Tamper detected on M-1036 in Surathkal",
+      "createdAt": "2026-11-12T04:19:38.545Z"
+    },
+    {
+      "id": "AL-020",
+      "meterId": "M-1086",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "type": "Inactive meter",
+      "severity": "Warning",
+      "status": "Resolved",
+      "message": "Inactive meter on M-1086 in Padil",
+      "createdAt": "2026-11-11T06:24:34.459Z"
+    },
+    {
+      "id": "AL-021",
+      "meterId": "M-1036",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "type": "Low consumption",
+      "severity": "Info",
+      "status": "Open",
+      "message": "Low consumption on M-1036 in Surathkal",
+      "createdAt": "2026-11-10T19:23:06.190Z"
+    },
+    {
+      "id": "AL-022",
+      "meterId": "M-1012",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "type": "Low consumption",
+      "severity": "Info",
+      "status": "Resolved",
+      "message": "Low consumption on M-1012 in Mangalore",
+      "createdAt": "2026-11-10T01:16:27.533Z"
+    },
+    {
+      "id": "AL-023",
+      "meterId": "M-1080",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "type": "Tamper detected",
+      "severity": "Critical",
+      "status": "Resolved",
+      "message": "Tamper detected on M-1080 in Padil",
+      "createdAt": "2026-11-09T18:33:05.691Z"
+    },
+    {
+      "id": "AL-024",
+      "meterId": "M-1062",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "type": "Inactive meter",
+      "severity": "Warning",
+      "status": "Resolved",
+      "message": "Inactive meter on M-1062 in Mulki",
+      "createdAt": "2026-11-09T06:29:05.323Z"
+    },
+    {
+      "id": "AL-025",
+      "meterId": "M-1043",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "type": "High consumption",
+      "severity": "Critical",
+      "status": "Open",
+      "message": "High consumption on M-1043 in Surathkal",
+      "createdAt": "2026-11-08T04:21:15.020Z"
+    },
+    {
+      "id": "AL-026",
+      "meterId": "M-1033",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "type": "Inactive meter",
+      "severity": "Warning",
+      "status": "Acknowledged",
+      "message": "Inactive meter on M-1033 in Udupi",
+      "createdAt": "2026-11-06T18:54:54.291Z"
+    },
+    {
+      "id": "AL-027",
+      "meterId": "M-1071",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "type": "High consumption",
+      "severity": "Warning",
+      "status": "Resolved",
+      "message": "High consumption on M-1071 in Mulki",
+      "createdAt": "2026-11-04T03:00:54.027Z"
+    },
+    {
+      "id": "AL-028",
+      "meterId": "M-1026",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "type": "Tamper detected",
+      "severity": "Critical",
+      "status": "Acknowledged",
+      "message": "Tamper detected on M-1026 in Udupi",
+      "createdAt": "2026-11-03T13:27:45.622Z"
+    },
+    {
+      "id": "AL-029",
+      "meterId": "M-1078",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "type": "Inactive meter",
+      "severity": "Warning",
+      "status": "Open",
+      "message": "Inactive meter on M-1078 in Padil",
+      "createdAt": "2026-11-03T08:59:43.367Z"
+    },
+    {
+      "id": "AL-030",
+      "meterId": "M-1091",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "type": "Tamper detected",
+      "severity": "Critical",
+      "status": "Open",
+      "message": "Tamper detected on M-1091 in Padil",
+      "createdAt": "2026-11-03T06:11:57.667Z"
+    },
+    {
+      "id": "AL-031",
+      "meterId": "M-1071",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "type": "Inactive meter",
+      "severity": "Warning",
+      "status": "Acknowledged",
+      "message": "Inactive meter on M-1071 in Mulki",
+      "createdAt": "2026-11-02T19:05:55.149Z"
+    },
+    {
+      "id": "AL-032",
+      "meterId": "M-1027",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "type": "Tamper detected",
+      "severity": "Critical",
+      "status": "Open",
+      "message": "Tamper detected on M-1027 in Udupi",
+      "createdAt": "2026-11-02T07:22:50.935Z"
+    },
+    {
+      "id": "AL-033",
+      "meterId": "M-1073",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "type": "Low consumption",
+      "severity": "Info",
+      "status": "Open",
+      "message": "Low consumption on M-1073 in Mulki",
+      "createdAt": "2026-11-01T22:02:15.245Z"
+    },
+    {
+      "id": "AL-034",
+      "meterId": "M-1040",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "type": "Tamper detected",
+      "severity": "Critical",
+      "status": "Resolved",
+      "message": "Tamper detected on M-1040 in Surathkal",
+      "createdAt": "2026-11-01T21:08:46.815Z"
+    },
+    {
+      "id": "AL-035",
+      "meterId": "M-1017",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "type": "High consumption",
+      "severity": "Critical",
+      "status": "Resolved",
+      "message": "High consumption on M-1017 in Mangalore",
+      "createdAt": "2026-10-31T09:25:36.976Z"
+    },
+    {
+      "id": "AL-036",
+      "meterId": "M-1101",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "type": "High consumption",
+      "severity": "Warning",
+      "status": "Resolved",
+      "message": "High consumption on M-1101 in Bajpe",
+      "createdAt": "2026-10-31T01:41:29.042Z"
+    },
+    {
+      "id": "AL-037",
+      "meterId": "M-1097",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "type": "Abnormal reading",
+      "severity": "Warning",
+      "status": "Open",
+      "message": "Abnormal reading on M-1097 in Bajpe",
+      "createdAt": "2026-10-30T21:06:58.209Z"
+    },
+    {
+      "id": "AL-038",
+      "meterId": "M-1009",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "type": "High consumption",
+      "severity": "Warning",
+      "status": "Open",
+      "message": "High consumption on M-1009 in Mangalore",
+      "createdAt": "2026-10-27T15:22:09.597Z"
+    },
+    {
+      "id": "AL-039",
+      "meterId": "M-1031",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "type": "Tamper detected",
+      "severity": "Critical",
+      "status": "Resolved",
+      "message": "Tamper detected on M-1031 in Udupi",
+      "createdAt": "2026-10-27T05:28:45.047Z"
+    },
+    {
+      "id": "AL-040",
+      "meterId": "M-1011",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "type": "Abnormal reading",
+      "severity": "Warning",
+      "status": "Open",
+      "message": "Abnormal reading on M-1011 in Mangalore",
+      "createdAt": "2026-10-26T17:59:48.457Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "LOG-0001",
+      "timestamp": "2026-11-24T00:57:34.924Z",
+      "userId": "U-004",
+      "userName": "Agastya Abbott-Kakkar",
+      "role": "zone_admin",
+      "action": "Add customer",
+      "resource": "User U-049",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0002",
+      "timestamp": "2026-11-23T16:44:05.824Z",
+      "userId": "U-004",
+      "userName": "Agastya Abbott-Kakkar",
+      "role": "zone_admin",
+      "action": "Login",
+      "resource": "Session",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0003",
+      "timestamp": "2026-11-22T04:27:53.128Z",
+      "userId": "U-001",
+      "userName": "Divya Kapoor",
+      "role": "enterprise",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0004",
+      "timestamp": "2026-11-22T01:17:17.714Z",
+      "userId": "U-001",
+      "userName": "Divya Kapoor",
+      "role": "enterprise",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0005",
+      "timestamp": "2026-11-21T22:18:14.555Z",
+      "userId": "U-002",
+      "userName": "Chatur Acharya",
+      "role": "zone_admin",
+      "action": "Add customer",
+      "resource": "User U-016",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0006",
+      "timestamp": "2026-11-21T15:55:24.264Z",
+      "userId": "U-006",
+      "userName": "Lakshminath Bhattathiri",
+      "role": "zone_admin",
+      "action": "Logout",
+      "resource": "Session",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0007",
+      "timestamp": "2026-11-21T13:32:15.312Z",
+      "userId": "U-001",
+      "userName": "Divya Kapoor",
+      "role": "enterprise",
+      "action": "Update zone",
+      "resource": "Zone ZN-001",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0008",
+      "timestamp": "2026-11-21T05:59:37.726Z",
+      "userId": "U-005",
+      "userName": "Bhardwaj Gowda",
+      "role": "zone_admin",
+      "action": "Add meter",
+      "resource": "Meter M-1057",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0009",
+      "timestamp": "2026-11-21T00:55:54.311Z",
+      "userId": "U-007",
+      "userName": "Siddhran Embranthiri",
+      "role": "zone_admin",
+      "action": "Logout",
+      "resource": "Session",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0010",
+      "timestamp": "2026-11-20T21:25:09.241Z",
+      "userId": "U-003",
+      "userName": "Dhananjay Malik",
+      "role": "zone_admin",
+      "action": "Deactivate meter",
+      "resource": "Meter M-1022",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0011",
+      "timestamp": "2026-11-20T08:09:29.134Z",
+      "userId": "U-005",
+      "userName": "Bhardwaj Gowda",
+      "role": "zone_admin",
+      "action": "Deactivate meter",
+      "resource": "Meter M-1060",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0012",
+      "timestamp": "2026-11-18T17:37:15.541Z",
+      "userId": "U-005",
+      "userName": "Bhardwaj Gowda",
+      "role": "zone_admin",
+      "action": "Add customer",
+      "resource": "User U-056",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0013",
+      "timestamp": "2026-11-18T17:23:38.111Z",
+      "userId": "U-005",
+      "userName": "Bhardwaj Gowda",
+      "role": "zone_admin",
+      "action": "Add meter",
+      "resource": "Meter M-1074",
+      "status": "Failed"
+    },
+    {
+      "id": "LOG-0014",
+      "timestamp": "2026-11-18T12:20:15.571Z",
+      "userId": "U-001",
+      "userName": "Divya Kapoor",
+      "role": "enterprise",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0015",
+      "timestamp": "2026-11-17T02:11:05.153Z",
+      "userId": "U-003",
+      "userName": "Dhananjay Malik",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0016",
+      "timestamp": "2026-11-16T03:39:08.035Z",
+      "userId": "U-003",
+      "userName": "Dhananjay Malik",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0017",
+      "timestamp": "2026-11-15T20:27:52.204Z",
+      "userId": "U-005",
+      "userName": "Bhardwaj Gowda",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0018",
+      "timestamp": "2026-11-15T16:07:59.597Z",
+      "userId": "U-006",
+      "userName": "Lakshminath Bhattathiri",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0019",
+      "timestamp": "2026-11-15T06:04:54.575Z",
+      "userId": "U-007",
+      "userName": "Siddhran Embranthiri",
+      "role": "zone_admin",
+      "action": "Logout",
+      "resource": "Session",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0020",
+      "timestamp": "2026-11-13T19:26:50.676Z",
+      "userId": "U-005",
+      "userName": "Bhardwaj Gowda",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0021",
+      "timestamp": "2026-11-13T09:59:13.811Z",
+      "userId": "U-002",
+      "userName": "Chatur Acharya",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0022",
+      "timestamp": "2026-11-12T15:43:41.627Z",
+      "userId": "U-002",
+      "userName": "Chatur Acharya",
+      "role": "zone_admin",
+      "action": "Add meter",
+      "resource": "Meter M-1012",
+      "status": "Failed"
+    },
+    {
+      "id": "LOG-0023",
+      "timestamp": "2026-11-11T23:34:01.737Z",
+      "userId": "U-001",
+      "userName": "Divya Kapoor",
+      "role": "enterprise",
+      "action": "Logout",
+      "resource": "Session",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0024",
+      "timestamp": "2026-11-11T23:16:21.088Z",
+      "userId": "U-004",
+      "userName": "Agastya Abbott-Kakkar",
+      "role": "zone_admin",
+      "action": "Add meter",
+      "resource": "Meter M-1053",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0025",
+      "timestamp": "2026-11-10T15:21:07.843Z",
+      "userId": "U-005",
+      "userName": "Bhardwaj Gowda",
+      "role": "zone_admin",
+      "action": "Add meter",
+      "resource": "Meter M-1065",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0026",
+      "timestamp": "2026-11-09T21:25:40.660Z",
+      "userId": "U-007",
+      "userName": "Siddhran Embranthiri",
+      "role": "zone_admin",
+      "action": "Add meter",
+      "resource": "Meter M-1096",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0027",
+      "timestamp": "2026-11-09T15:31:59.642Z",
+      "userId": "U-001",
+      "userName": "Divya Kapoor",
+      "role": "enterprise",
+      "action": "Update settings",
+      "resource": "Enterprise settings",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0028",
+      "timestamp": "2026-11-08T05:35:46.689Z",
+      "userId": "U-005",
+      "userName": "Bhardwaj Gowda",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0029",
+      "timestamp": "2026-11-08T00:16:50.821Z",
+      "userId": "U-006",
+      "userName": "Lakshminath Bhattathiri",
+      "role": "zone_admin",
+      "action": "Add meter",
+      "resource": "Meter M-1094",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0030",
+      "timestamp": "2026-11-06T22:17:58.485Z",
+      "userId": "U-003",
+      "userName": "Dhananjay Malik",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0031",
+      "timestamp": "2026-11-06T21:55:52.370Z",
+      "userId": "U-004",
+      "userName": "Agastya Abbott-Kakkar",
+      "role": "zone_admin",
+      "action": "Logout",
+      "resource": "Session",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0032",
+      "timestamp": "2026-11-06T08:03:50.808Z",
+      "userId": "U-006",
+      "userName": "Lakshminath Bhattathiri",
+      "role": "zone_admin",
+      "action": "Deactivate meter",
+      "resource": "Meter M-1080",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0033",
+      "timestamp": "2026-11-05T21:23:16.276Z",
+      "userId": "U-006",
+      "userName": "Lakshminath Bhattathiri",
+      "role": "zone_admin",
+      "action": "Logout",
+      "resource": "Session",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0034",
+      "timestamp": "2026-11-05T00:22:31.185Z",
+      "userId": "U-004",
+      "userName": "Agastya Abbott-Kakkar",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0035",
+      "timestamp": "2026-11-04T12:31:40.639Z",
+      "userId": "U-005",
+      "userName": "Bhardwaj Gowda",
+      "role": "zone_admin",
+      "action": "Deactivate meter",
+      "resource": "Meter M-1074",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0036",
+      "timestamp": "2026-11-04T05:29:31.460Z",
+      "userId": "U-002",
+      "userName": "Chatur Acharya",
+      "role": "zone_admin",
+      "action": "Add meter",
+      "resource": "Meter M-1009",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0037",
+      "timestamp": "2026-11-04T01:12:03.301Z",
+      "userId": "U-003",
+      "userName": "Dhananjay Malik",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0038",
+      "timestamp": "2026-11-04T00:41:38.598Z",
+      "userId": "U-006",
+      "userName": "Lakshminath Bhattathiri",
+      "role": "zone_admin",
+      "action": "Login",
+      "resource": "Session",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0039",
+      "timestamp": "2026-11-03T22:50:40.743Z",
+      "userId": "U-005",
+      "userName": "Bhardwaj Gowda",
+      "role": "zone_admin",
+      "action": "Add customer",
+      "resource": "User U-055",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0040",
+      "timestamp": "2026-11-03T22:00:27.400Z",
+      "userId": "U-006",
+      "userName": "Lakshminath Bhattathiri",
+      "role": "zone_admin",
+      "action": "Add customer",
+      "resource": "User U-081",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0041",
+      "timestamp": "2026-11-03T07:21:54.208Z",
+      "userId": "U-001",
+      "userName": "Divya Kapoor",
+      "role": "enterprise",
+      "action": "Login",
+      "resource": "Session",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0042",
+      "timestamp": "2026-11-02T00:01:13.438Z",
+      "userId": "U-005",
+      "userName": "Bhardwaj Gowda",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0043",
+      "timestamp": "2026-11-01T12:01:36.619Z",
+      "userId": "U-003",
+      "userName": "Dhananjay Malik",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0044",
+      "timestamp": "2026-11-01T10:22:27.792Z",
+      "userId": "U-003",
+      "userName": "Dhananjay Malik",
+      "role": "zone_admin",
+      "action": "Add customer",
+      "resource": "User U-037",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0045",
+      "timestamp": "2026-11-01T06:52:10.168Z",
+      "userId": "U-001",
+      "userName": "Divya Kapoor",
+      "role": "enterprise",
+      "action": "Create zone",
+      "resource": "Zone ZN-005",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0046",
+      "timestamp": "2026-11-01T01:55:00.247Z",
+      "userId": "U-007",
+      "userName": "Siddhran Embranthiri",
+      "role": "zone_admin",
+      "action": "Logout",
+      "resource": "Session",
+      "status": "Failed"
+    },
+    {
+      "id": "LOG-0047",
+      "timestamp": "2026-10-31T13:37:25.734Z",
+      "userId": "U-001",
+      "userName": "Divya Kapoor",
+      "role": "enterprise",
+      "action": "Create zone",
+      "resource": "Zone ZN-003",
+      "status": "Failed"
+    },
+    {
+      "id": "LOG-0048",
+      "timestamp": "2026-10-30T12:15:09.495Z",
+      "userId": "U-007",
+      "userName": "Siddhran Embranthiri",
+      "role": "zone_admin",
+      "action": "Deactivate meter",
+      "resource": "Meter M-1105",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0049",
+      "timestamp": "2026-10-30T12:03:36.076Z",
+      "userId": "U-003",
+      "userName": "Dhananjay Malik",
+      "role": "zone_admin",
+      "action": "Add meter",
+      "resource": "Meter M-1033",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0050",
+      "timestamp": "2026-10-29T20:27:14.960Z",
+      "userId": "U-003",
+      "userName": "Dhananjay Malik",
+      "role": "zone_admin",
+      "action": "Add meter",
+      "resource": "Meter M-1026",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0051",
+      "timestamp": "2026-10-29T07:17:02.334Z",
+      "userId": "U-006",
+      "userName": "Lakshminath Bhattathiri",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0052",
+      "timestamp": "2026-10-28T19:45:34.227Z",
+      "userId": "U-004",
+      "userName": "Agastya Abbott-Kakkar",
+      "role": "zone_admin",
+      "action": "Deactivate meter",
+      "resource": "Meter M-1048",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0053",
+      "timestamp": "2026-10-28T18:10:29.559Z",
+      "userId": "U-003",
+      "userName": "Dhananjay Malik",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0054",
+      "timestamp": "2026-10-28T14:01:10.654Z",
+      "userId": "U-001",
+      "userName": "Divya Kapoor",
+      "role": "enterprise",
+      "action": "Login",
+      "resource": "Session",
+      "status": "Failed"
+    },
+    {
+      "id": "LOG-0055",
+      "timestamp": "2026-10-28T13:01:17.832Z",
+      "userId": "U-007",
+      "userName": "Siddhran Embranthiri",
+      "role": "zone_admin",
+      "action": "Logout",
+      "resource": "Session",
+      "status": "Failed"
+    },
+    {
+      "id": "LOG-0056",
+      "timestamp": "2026-10-27T22:25:43.796Z",
+      "userId": "U-004",
+      "userName": "Agastya Abbott-Kakkar",
+      "role": "zone_admin",
+      "action": "Deactivate meter",
+      "resource": "Meter M-1044",
+      "status": "Failed"
+    },
+    {
+      "id": "LOG-0057",
+      "timestamp": "2026-10-27T15:52:26.306Z",
+      "userId": "U-002",
+      "userName": "Chatur Acharya",
+      "role": "zone_admin",
+      "action": "Add meter",
+      "resource": "Meter M-1010",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0058",
+      "timestamp": "2026-10-26T18:55:23.559Z",
+      "userId": "U-007",
+      "userName": "Siddhran Embranthiri",
+      "role": "zone_admin",
+      "action": "Logout",
+      "resource": "Session",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0059",
+      "timestamp": "2026-10-26T02:51:14.660Z",
+      "userId": "U-004",
+      "userName": "Agastya Abbott-Kakkar",
+      "role": "zone_admin",
+      "action": "Generate report",
+      "resource": "Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG-0060",
+      "timestamp": "2026-10-25T18:39:28.070Z",
+      "userId": "U-006",
+      "userName": "Lakshminath Bhattathiri",
+      "role": "zone_admin",
+      "action": "Deactivate meter",
+      "resource": "Meter M-1091",
+      "status": "Success"
+    }
+  ],
+  "enterpriseSettings": {
+    "dataRetention": {
+      "meterReadingsMonths": 24,
+      "alertsMonths": 12
+    },
+    "policies": {
+      "autoLogoutMinutes": 30,
+      "auditLogRetentionDays": 365
+    },
+    "localisation": {
+      "timeZone": "Asia/Kolkata",
+      "defaultLanguage": "en",
+      "currency": "INR"
+    },
+    "notificationDefaults": {
+      "email": true,
+      "sms": false,
+      "inApp": true
+    }
+  },
+  "zoneConsumption": [
+    {
+      "id": "ZC-0001",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "00:00",
+      "avgKwh": 0.28
+    },
+    {
+      "id": "ZC-0002",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "01:00",
+      "avgKwh": 0.31
+    },
+    {
+      "id": "ZC-0003",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "02:00",
+      "avgKwh": 0.29
+    },
+    {
+      "id": "ZC-0004",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "03:00",
+      "avgKwh": 0.39
+    },
+    {
+      "id": "ZC-0005",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "04:00",
+      "avgKwh": 0.27
+    },
+    {
+      "id": "ZC-0006",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "05:00",
+      "avgKwh": 0.28
+    },
+    {
+      "id": "ZC-0007",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "06:00",
+      "avgKwh": 0.66
+    },
+    {
+      "id": "ZC-0008",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "07:00",
+      "avgKwh": 0.78
+    },
+    {
+      "id": "ZC-0009",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "08:00",
+      "avgKwh": 0.6
+    },
+    {
+      "id": "ZC-0010",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "09:00",
+      "avgKwh": 0.59
+    },
+    {
+      "id": "ZC-0011",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "10:00",
+      "avgKwh": 0.72
+    },
+    {
+      "id": "ZC-0012",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "11:00",
+      "avgKwh": 0.69
+    },
+    {
+      "id": "ZC-0013",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "12:00",
+      "avgKwh": 0.62
+    },
+    {
+      "id": "ZC-0014",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "13:00",
+      "avgKwh": 0.6
+    },
+    {
+      "id": "ZC-0015",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "14:00",
+      "avgKwh": 0.75
+    },
+    {
+      "id": "ZC-0016",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "15:00",
+      "avgKwh": 0.75
+    },
+    {
+      "id": "ZC-0017",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "16:00",
+      "avgKwh": 0.62
+    },
+    {
+      "id": "ZC-0018",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "17:00",
+      "avgKwh": 0.73
+    },
+    {
+      "id": "ZC-0019",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "18:00",
+      "avgKwh": 1.22
+    },
+    {
+      "id": "ZC-0020",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "19:00",
+      "avgKwh": 1.38
+    },
+    {
+      "id": "ZC-0021",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "20:00",
+      "avgKwh": 1.4
+    },
+    {
+      "id": "ZC-0022",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "21:00",
+      "avgKwh": 1.21
+    },
+    {
+      "id": "ZC-0023",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "22:00",
+      "avgKwh": 1.14
+    },
+    {
+      "id": "ZC-0024",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "day",
+      "label": "23:00",
+      "avgKwh": 0.54
+    },
+    {
+      "id": "ZC-0025",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "week",
+      "label": "Week 1",
+      "avgKwh": 63.08
+    },
+    {
+      "id": "ZC-0026",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "week",
+      "label": "Week 2",
+      "avgKwh": 59.48
+    },
+    {
+      "id": "ZC-0027",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "week",
+      "label": "Week 3",
+      "avgKwh": 57.17
+    },
+    {
+      "id": "ZC-0028",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "week",
+      "label": "Week 4",
+      "avgKwh": 73.63
+    },
+    {
+      "id": "ZC-0029",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "week",
+      "label": "Week 5",
+      "avgKwh": 70.22
+    },
+    {
+      "id": "ZC-0030",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "month",
+      "label": "Dec 2025",
+      "avgKwh": 334.45
+    },
+    {
+      "id": "ZC-0031",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "month",
+      "label": "Jan 2026",
+      "avgKwh": 277.52
+    },
+    {
+      "id": "ZC-0032",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "month",
+      "label": "Feb 2026",
+      "avgKwh": 261.4
+    },
+    {
+      "id": "ZC-0033",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "month",
+      "label": "Mar 2026",
+      "avgKwh": 247.54
+    },
+    {
+      "id": "ZC-0034",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "month",
+      "label": "Apr 2026",
+      "avgKwh": 244.74
+    },
+    {
+      "id": "ZC-0035",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "month",
+      "label": "May 2026",
+      "avgKwh": 313.8
+    },
+    {
+      "id": "ZC-0036",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "month",
+      "label": "Jun 2026",
+      "avgKwh": 261.33
+    },
+    {
+      "id": "ZC-0037",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "month",
+      "label": "Jul 2026",
+      "avgKwh": 292.13
+    },
+    {
+      "id": "ZC-0038",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "month",
+      "label": "Aug 2026",
+      "avgKwh": 299.15
+    },
+    {
+      "id": "ZC-0039",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "month",
+      "label": "Sep 2026",
+      "avgKwh": 315.36
+    },
+    {
+      "id": "ZC-0040",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "month",
+      "label": "Oct 2026",
+      "avgKwh": 306.94
+    },
+    {
+      "id": "ZC-0041",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "month",
+      "label": "Nov 2026",
+      "avgKwh": 329.73
+    },
+    {
+      "id": "ZC-0042",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "year",
+      "label": "2024",
+      "avgKwh": 3109.46
+    },
+    {
+      "id": "ZC-0043",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "year",
+      "label": "2025",
+      "avgKwh": 3225.66
+    },
+    {
+      "id": "ZC-0044",
+      "zoneId": "ZN-001",
+      "zoneName": "Mangalore",
+      "period": "year",
+      "label": "2026",
+      "avgKwh": 3364.83
+    },
+    {
+      "id": "ZC-0045",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "00:00",
+      "avgKwh": 0.27
+    },
+    {
+      "id": "ZC-0046",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "01:00",
+      "avgKwh": 0.32
+    },
+    {
+      "id": "ZC-0047",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "02:00",
+      "avgKwh": 0.25
+    },
+    {
+      "id": "ZC-0048",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "03:00",
+      "avgKwh": 0.25
+    },
+    {
+      "id": "ZC-0049",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "04:00",
+      "avgKwh": 0.36
+    },
+    {
+      "id": "ZC-0050",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "05:00",
+      "avgKwh": 0.29
+    },
+    {
+      "id": "ZC-0051",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "06:00",
+      "avgKwh": 0.57
+    },
+    {
+      "id": "ZC-0052",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "07:00",
+      "avgKwh": 0.7
+    },
+    {
+      "id": "ZC-0053",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "08:00",
+      "avgKwh": 0.71
+    },
+    {
+      "id": "ZC-0054",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "09:00",
+      "avgKwh": 0.59
+    },
+    {
+      "id": "ZC-0055",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "10:00",
+      "avgKwh": 0.71
+    },
+    {
+      "id": "ZC-0056",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "11:00",
+      "avgKwh": 0.5
+    },
+    {
+      "id": "ZC-0057",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "12:00",
+      "avgKwh": 0.53
+    },
+    {
+      "id": "ZC-0058",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "13:00",
+      "avgKwh": 0.63
+    },
+    {
+      "id": "ZC-0059",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "14:00",
+      "avgKwh": 0.52
+    },
+    {
+      "id": "ZC-0060",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "15:00",
+      "avgKwh": 0.64
+    },
+    {
+      "id": "ZC-0061",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "16:00",
+      "avgKwh": 0.72
+    },
+    {
+      "id": "ZC-0062",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "17:00",
+      "avgKwh": 0.68
+    },
+    {
+      "id": "ZC-0063",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "18:00",
+      "avgKwh": 1.03
+    },
+    {
+      "id": "ZC-0064",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "19:00",
+      "avgKwh": 1.03
+    },
+    {
+      "id": "ZC-0065",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "20:00",
+      "avgKwh": 1.11
+    },
+    {
+      "id": "ZC-0066",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "21:00",
+      "avgKwh": 1.1
+    },
+    {
+      "id": "ZC-0067",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "22:00",
+      "avgKwh": 0.94
+    },
+    {
+      "id": "ZC-0068",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "day",
+      "label": "23:00",
+      "avgKwh": 0.63
+    },
+    {
+      "id": "ZC-0069",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "week",
+      "label": "Week 1",
+      "avgKwh": 73.93
+    },
+    {
+      "id": "ZC-0070",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "week",
+      "label": "Week 2",
+      "avgKwh": 55.46
+    },
+    {
+      "id": "ZC-0071",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "week",
+      "label": "Week 3",
+      "avgKwh": 56.09
+    },
+    {
+      "id": "ZC-0072",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "week",
+      "label": "Week 4",
+      "avgKwh": 61.05
+    },
+    {
+      "id": "ZC-0073",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "week",
+      "label": "Week 5",
+      "avgKwh": 73.57
+    },
+    {
+      "id": "ZC-0074",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "month",
+      "label": "Dec 2025",
+      "avgKwh": 271.95
+    },
+    {
+      "id": "ZC-0075",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "month",
+      "label": "Jan 2026",
+      "avgKwh": 241.85
+    },
+    {
+      "id": "ZC-0076",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "month",
+      "label": "Feb 2026",
+      "avgKwh": 247.86
+    },
+    {
+      "id": "ZC-0077",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "month",
+      "label": "Mar 2026",
+      "avgKwh": 260.62
+    },
+    {
+      "id": "ZC-0078",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "month",
+      "label": "Apr 2026",
+      "avgKwh": 258.27
+    },
+    {
+      "id": "ZC-0079",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "month",
+      "label": "May 2026",
+      "avgKwh": 262.3
+    },
+    {
+      "id": "ZC-0080",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "month",
+      "label": "Jun 2026",
+      "avgKwh": 270.3
+    },
+    {
+      "id": "ZC-0081",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "month",
+      "label": "Jul 2026",
+      "avgKwh": 296.51
+    },
+    {
+      "id": "ZC-0082",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "month",
+      "label": "Aug 2026",
+      "avgKwh": 250.32
+    },
+    {
+      "id": "ZC-0083",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "month",
+      "label": "Sep 2026",
+      "avgKwh": 285.15
+    },
+    {
+      "id": "ZC-0084",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "month",
+      "label": "Oct 2026",
+      "avgKwh": 247.96
+    },
+    {
+      "id": "ZC-0085",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "month",
+      "label": "Nov 2026",
+      "avgKwh": 271.55
+    },
+    {
+      "id": "ZC-0086",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "year",
+      "label": "2024",
+      "avgKwh": 3774.7
+    },
+    {
+      "id": "ZC-0087",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "year",
+      "label": "2025",
+      "avgKwh": 2962.72
+    },
+    {
+      "id": "ZC-0088",
+      "zoneId": "ZN-002",
+      "zoneName": "Udupi",
+      "period": "year",
+      "label": "2026",
+      "avgKwh": 3018.89
+    },
+    {
+      "id": "ZC-0089",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "00:00",
+      "avgKwh": 0.2
+    },
+    {
+      "id": "ZC-0090",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "01:00",
+      "avgKwh": 0.28
+    },
+    {
+      "id": "ZC-0091",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "02:00",
+      "avgKwh": 0.22
+    },
+    {
+      "id": "ZC-0092",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "03:00",
+      "avgKwh": 0.24
+    },
+    {
+      "id": "ZC-0093",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "04:00",
+      "avgKwh": 0.26
+    },
+    {
+      "id": "ZC-0094",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "05:00",
+      "avgKwh": 0.26
+    },
+    {
+      "id": "ZC-0095",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "06:00",
+      "avgKwh": 0.4
+    },
+    {
+      "id": "ZC-0096",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "07:00",
+      "avgKwh": 0.42
+    },
+    {
+      "id": "ZC-0097",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "08:00",
+      "avgKwh": 0.57
+    },
+    {
+      "id": "ZC-0098",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "09:00",
+      "avgKwh": 0.44
+    },
+    {
+      "id": "ZC-0099",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "10:00",
+      "avgKwh": 0.56
+    },
+    {
+      "id": "ZC-0100",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "11:00",
+      "avgKwh": 0.58
+    },
+    {
+      "id": "ZC-0101",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "12:00",
+      "avgKwh": 0.51
+    },
+    {
+      "id": "ZC-0102",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "13:00",
+      "avgKwh": 0.56
+    },
+    {
+      "id": "ZC-0103",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "14:00",
+      "avgKwh": 0.42
+    },
+    {
+      "id": "ZC-0104",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "15:00",
+      "avgKwh": 0.4
+    },
+    {
+      "id": "ZC-0105",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "16:00",
+      "avgKwh": 0.44
+    },
+    {
+      "id": "ZC-0106",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "17:00",
+      "avgKwh": 0.42
+    },
+    {
+      "id": "ZC-0107",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "18:00",
+      "avgKwh": 0.87
+    },
+    {
+      "id": "ZC-0108",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "19:00",
+      "avgKwh": 0.78
+    },
+    {
+      "id": "ZC-0109",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "20:00",
+      "avgKwh": 0.83
+    },
+    {
+      "id": "ZC-0110",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "21:00",
+      "avgKwh": 0.94
+    },
+    {
+      "id": "ZC-0111",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "22:00",
+      "avgKwh": 0.81
+    },
+    {
+      "id": "ZC-0112",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "day",
+      "label": "23:00",
+      "avgKwh": 0.58
+    },
+    {
+      "id": "ZC-0113",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "week",
+      "label": "Week 1",
+      "avgKwh": 49.96
+    },
+    {
+      "id": "ZC-0114",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "week",
+      "label": "Week 2",
+      "avgKwh": 40.87
+    },
+    {
+      "id": "ZC-0115",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "week",
+      "label": "Week 3",
+      "avgKwh": 56.68
+    },
+    {
+      "id": "ZC-0116",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "week",
+      "label": "Week 4",
+      "avgKwh": 42.36
+    },
+    {
+      "id": "ZC-0117",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "week",
+      "label": "Week 5",
+      "avgKwh": 50.41
+    },
+    {
+      "id": "ZC-0118",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "month",
+      "label": "Dec 2025",
+      "avgKwh": 254.89
+    },
+    {
+      "id": "ZC-0119",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "month",
+      "label": "Jan 2026",
+      "avgKwh": 192.69
+    },
+    {
+      "id": "ZC-0120",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "month",
+      "label": "Feb 2026",
+      "avgKwh": 198.17
+    },
+    {
+      "id": "ZC-0121",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "month",
+      "label": "Mar 2026",
+      "avgKwh": 207.14
+    },
+    {
+      "id": "ZC-0122",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "month",
+      "label": "Apr 2026",
+      "avgKwh": 238.43
+    },
+    {
+      "id": "ZC-0123",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "month",
+      "label": "May 2026",
+      "avgKwh": 235.91
+    },
+    {
+      "id": "ZC-0124",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "month",
+      "label": "Jun 2026",
+      "avgKwh": 181.33
+    },
+    {
+      "id": "ZC-0125",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "month",
+      "label": "Jul 2026",
+      "avgKwh": 242.93
+    },
+    {
+      "id": "ZC-0126",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "month",
+      "label": "Aug 2026",
+      "avgKwh": 252.66
+    },
+    {
+      "id": "ZC-0127",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "month",
+      "label": "Sep 2026",
+      "avgKwh": 218.83
+    },
+    {
+      "id": "ZC-0128",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "month",
+      "label": "Oct 2026",
+      "avgKwh": 238.26
+    },
+    {
+      "id": "ZC-0129",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "month",
+      "label": "Nov 2026",
+      "avgKwh": 240.55
+    },
+    {
+      "id": "ZC-0130",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "year",
+      "label": "2024",
+      "avgKwh": 2224.58
+    },
+    {
+      "id": "ZC-0131",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "year",
+      "label": "2025",
+      "avgKwh": 2734.39
+    },
+    {
+      "id": "ZC-0132",
+      "zoneId": "ZN-003",
+      "zoneName": "Surathkal",
+      "period": "year",
+      "label": "2026",
+      "avgKwh": 2861.41
+    },
+    {
+      "id": "ZC-0133",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "00:00",
+      "avgKwh": 0.29
+    },
+    {
+      "id": "ZC-0134",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "01:00",
+      "avgKwh": 0.39
+    },
+    {
+      "id": "ZC-0135",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "02:00",
+      "avgKwh": 0.36
+    },
+    {
+      "id": "ZC-0136",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "03:00",
+      "avgKwh": 0.34
+    },
+    {
+      "id": "ZC-0137",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "04:00",
+      "avgKwh": 0.29
+    },
+    {
+      "id": "ZC-0138",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "05:00",
+      "avgKwh": 0.37
+    },
+    {
+      "id": "ZC-0139",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "06:00",
+      "avgKwh": 0.81
+    },
+    {
+      "id": "ZC-0140",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "07:00",
+      "avgKwh": 0.6
+    },
+    {
+      "id": "ZC-0141",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "08:00",
+      "avgKwh": 0.73
+    },
+    {
+      "id": "ZC-0142",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "09:00",
+      "avgKwh": 0.76
+    },
+    {
+      "id": "ZC-0143",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "10:00",
+      "avgKwh": 0.56
+    },
+    {
+      "id": "ZC-0144",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "11:00",
+      "avgKwh": 0.71
+    },
+    {
+      "id": "ZC-0145",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "12:00",
+      "avgKwh": 0.71
+    },
+    {
+      "id": "ZC-0146",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "13:00",
+      "avgKwh": 0.77
+    },
+    {
+      "id": "ZC-0147",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "14:00",
+      "avgKwh": 0.73
+    },
+    {
+      "id": "ZC-0148",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "15:00",
+      "avgKwh": 0.76
+    },
+    {
+      "id": "ZC-0149",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "16:00",
+      "avgKwh": 0.65
+    },
+    {
+      "id": "ZC-0150",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "17:00",
+      "avgKwh": 0.57
+    },
+    {
+      "id": "ZC-0151",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "18:00",
+      "avgKwh": 1.47
+    },
+    {
+      "id": "ZC-0152",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "19:00",
+      "avgKwh": 1.42
+    },
+    {
+      "id": "ZC-0153",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "20:00",
+      "avgKwh": 1.11
+    },
+    {
+      "id": "ZC-0154",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "21:00",
+      "avgKwh": 1.18
+    },
+    {
+      "id": "ZC-0155",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "22:00",
+      "avgKwh": 1.03
+    },
+    {
+      "id": "ZC-0156",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "day",
+      "label": "23:00",
+      "avgKwh": 0.77
+    },
+    {
+      "id": "ZC-0157",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "week",
+      "label": "Week 1",
+      "avgKwh": 78.09
+    },
+    {
+      "id": "ZC-0158",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "week",
+      "label": "Week 2",
+      "avgKwh": 81.39
+    },
+    {
+      "id": "ZC-0159",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "week",
+      "label": "Week 3",
+      "avgKwh": 70.09
+    },
+    {
+      "id": "ZC-0160",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "week",
+      "label": "Week 4",
+      "avgKwh": 71.63
+    },
+    {
+      "id": "ZC-0161",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "week",
+      "label": "Week 5",
+      "avgKwh": 72.92
+    },
+    {
+      "id": "ZC-0162",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "month",
+      "label": "Dec 2025",
+      "avgKwh": 332.87
+    },
+    {
+      "id": "ZC-0163",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "month",
+      "label": "Jan 2026",
+      "avgKwh": 322.29
+    },
+    {
+      "id": "ZC-0164",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "month",
+      "label": "Feb 2026",
+      "avgKwh": 327.11
+    },
+    {
+      "id": "ZC-0165",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "month",
+      "label": "Mar 2026",
+      "avgKwh": 340.52
+    },
+    {
+      "id": "ZC-0166",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "month",
+      "label": "Apr 2026",
+      "avgKwh": 238.74
+    },
+    {
+      "id": "ZC-0167",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "month",
+      "label": "May 2026",
+      "avgKwh": 295.59
+    },
+    {
+      "id": "ZC-0168",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "month",
+      "label": "Jun 2026",
+      "avgKwh": 310.64
+    },
+    {
+      "id": "ZC-0169",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "month",
+      "label": "Jul 2026",
+      "avgKwh": 345.98
+    },
+    {
+      "id": "ZC-0170",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "month",
+      "label": "Aug 2026",
+      "avgKwh": 262.29
+    },
+    {
+      "id": "ZC-0171",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "month",
+      "label": "Sep 2026",
+      "avgKwh": 238.29
+    },
+    {
+      "id": "ZC-0172",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "month",
+      "label": "Oct 2026",
+      "avgKwh": 297.84
+    },
+    {
+      "id": "ZC-0173",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "month",
+      "label": "Nov 2026",
+      "avgKwh": 330.42
+    },
+    {
+      "id": "ZC-0174",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "year",
+      "label": "2024",
+      "avgKwh": 3725.51
+    },
+    {
+      "id": "ZC-0175",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "year",
+      "label": "2025",
+      "avgKwh": 3557.52
+    },
+    {
+      "id": "ZC-0176",
+      "zoneId": "ZN-004",
+      "zoneName": "Mulki",
+      "period": "year",
+      "label": "2026",
+      "avgKwh": 3144.44
+    },
+    {
+      "id": "ZC-0177",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "00:00",
+      "avgKwh": 0.31
+    },
+    {
+      "id": "ZC-0178",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "01:00",
+      "avgKwh": 0.32
+    },
+    {
+      "id": "ZC-0179",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "02:00",
+      "avgKwh": 0.29
+    },
+    {
+      "id": "ZC-0180",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "03:00",
+      "avgKwh": 0.26
+    },
+    {
+      "id": "ZC-0181",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "04:00",
+      "avgKwh": 0.26
+    },
+    {
+      "id": "ZC-0182",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "05:00",
+      "avgKwh": 0.25
+    },
+    {
+      "id": "ZC-0183",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "06:00",
+      "avgKwh": 0.62
+    },
+    {
+      "id": "ZC-0184",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "07:00",
+      "avgKwh": 0.47
+    },
+    {
+      "id": "ZC-0185",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "08:00",
+      "avgKwh": 0.66
+    },
+    {
+      "id": "ZC-0186",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "09:00",
+      "avgKwh": 0.64
+    },
+    {
+      "id": "ZC-0187",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "10:00",
+      "avgKwh": 0.62
+    },
+    {
+      "id": "ZC-0188",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "11:00",
+      "avgKwh": 0.52
+    },
+    {
+      "id": "ZC-0189",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "12:00",
+      "avgKwh": 0.67
+    },
+    {
+      "id": "ZC-0190",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "13:00",
+      "avgKwh": 0.62
+    },
+    {
+      "id": "ZC-0191",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "14:00",
+      "avgKwh": 0.55
+    },
+    {
+      "id": "ZC-0192",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "15:00",
+      "avgKwh": 0.6
+    },
+    {
+      "id": "ZC-0193",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "16:00",
+      "avgKwh": 0.58
+    },
+    {
+      "id": "ZC-0194",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "17:00",
+      "avgKwh": 0.52
+    },
+    {
+      "id": "ZC-0195",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "18:00",
+      "avgKwh": 0.94
+    },
+    {
+      "id": "ZC-0196",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "19:00",
+      "avgKwh": 1.14
+    },
+    {
+      "id": "ZC-0197",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "20:00",
+      "avgKwh": 1.2
+    },
+    {
+      "id": "ZC-0198",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "21:00",
+      "avgKwh": 1.15
+    },
+    {
+      "id": "ZC-0199",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "22:00",
+      "avgKwh": 0.96
+    },
+    {
+      "id": "ZC-0200",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "day",
+      "label": "23:00",
+      "avgKwh": 0.62
+    },
+    {
+      "id": "ZC-0201",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "week",
+      "label": "Week 1",
+      "avgKwh": 56.44
+    },
+    {
+      "id": "ZC-0202",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "week",
+      "label": "Week 2",
+      "avgKwh": 56.57
+    },
+    {
+      "id": "ZC-0203",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "week",
+      "label": "Week 3",
+      "avgKwh": 58.21
+    },
+    {
+      "id": "ZC-0204",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "week",
+      "label": "Week 4",
+      "avgKwh": 52.63
+    },
+    {
+      "id": "ZC-0205",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "week",
+      "label": "Week 5",
+      "avgKwh": 66.43
+    },
+    {
+      "id": "ZC-0206",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "month",
+      "label": "Dec 2025",
+      "avgKwh": 205.83
+    },
+    {
+      "id": "ZC-0207",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "month",
+      "label": "Jan 2026",
+      "avgKwh": 241.45
+    },
+    {
+      "id": "ZC-0208",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "month",
+      "label": "Feb 2026",
+      "avgKwh": 241.02
+    },
+    {
+      "id": "ZC-0209",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "month",
+      "label": "Mar 2026",
+      "avgKwh": 245.34
+    },
+    {
+      "id": "ZC-0210",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "month",
+      "label": "Apr 2026",
+      "avgKwh": 282.24
+    },
+    {
+      "id": "ZC-0211",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "month",
+      "label": "May 2026",
+      "avgKwh": 246.04
+    },
+    {
+      "id": "ZC-0212",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "month",
+      "label": "Jun 2026",
+      "avgKwh": 287.98
+    },
+    {
+      "id": "ZC-0213",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "month",
+      "label": "Jul 2026",
+      "avgKwh": 216.45
+    },
+    {
+      "id": "ZC-0214",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "month",
+      "label": "Aug 2026",
+      "avgKwh": 225.23
+    },
+    {
+      "id": "ZC-0215",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "month",
+      "label": "Sep 2026",
+      "avgKwh": 272.6
+    },
+    {
+      "id": "ZC-0216",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "month",
+      "label": "Oct 2026",
+      "avgKwh": 278.42
+    },
+    {
+      "id": "ZC-0217",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "month",
+      "label": "Nov 2026",
+      "avgKwh": 274.9
+    },
+    {
+      "id": "ZC-0218",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "year",
+      "label": "2024",
+      "avgKwh": 2399.5
+    },
+    {
+      "id": "ZC-0219",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "year",
+      "label": "2025",
+      "avgKwh": 2357.33
+    },
+    {
+      "id": "ZC-0220",
+      "zoneId": "ZN-005",
+      "zoneName": "Padil",
+      "period": "year",
+      "label": "2026",
+      "avgKwh": 2560.75
+    },
+    {
+      "id": "ZC-0221",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "00:00",
+      "avgKwh": 0.35
+    },
+    {
+      "id": "ZC-0222",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "01:00",
+      "avgKwh": 0.25
+    },
+    {
+      "id": "ZC-0223",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "02:00",
+      "avgKwh": 0.3
+    },
+    {
+      "id": "ZC-0224",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "03:00",
+      "avgKwh": 0.29
+    },
+    {
+      "id": "ZC-0225",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "04:00",
+      "avgKwh": 0.28
+    },
+    {
+      "id": "ZC-0226",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "05:00",
+      "avgKwh": 0.27
+    },
+    {
+      "id": "ZC-0227",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "06:00",
+      "avgKwh": 0.7
+    },
+    {
+      "id": "ZC-0228",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "07:00",
+      "avgKwh": 0.7
+    },
+    {
+      "id": "ZC-0229",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "08:00",
+      "avgKwh": 0.66
+    },
+    {
+      "id": "ZC-0230",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "09:00",
+      "avgKwh": 0.7
+    },
+    {
+      "id": "ZC-0231",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "10:00",
+      "avgKwh": 0.61
+    },
+    {
+      "id": "ZC-0232",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "11:00",
+      "avgKwh": 0.7
+    },
+    {
+      "id": "ZC-0233",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "12:00",
+      "avgKwh": 0.55
+    },
+    {
+      "id": "ZC-0234",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "13:00",
+      "avgKwh": 0.68
+    },
+    {
+      "id": "ZC-0235",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "14:00",
+      "avgKwh": 0.62
+    },
+    {
+      "id": "ZC-0236",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "15:00",
+      "avgKwh": 0.66
+    },
+    {
+      "id": "ZC-0237",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "16:00",
+      "avgKwh": 0.72
+    },
+    {
+      "id": "ZC-0238",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "17:00",
+      "avgKwh": 0.7
+    },
+    {
+      "id": "ZC-0239",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "18:00",
+      "avgKwh": 0.88
+    },
+    {
+      "id": "ZC-0240",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "19:00",
+      "avgKwh": 0.95
+    },
+    {
+      "id": "ZC-0241",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "20:00",
+      "avgKwh": 1.09
+    },
+    {
+      "id": "ZC-0242",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "21:00",
+      "avgKwh": 1.25
+    },
+    {
+      "id": "ZC-0243",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "22:00",
+      "avgKwh": 1.06
+    },
+    {
+      "id": "ZC-0244",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "day",
+      "label": "23:00",
+      "avgKwh": 0.59
+    },
+    {
+      "id": "ZC-0245",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "week",
+      "label": "Week 1",
+      "avgKwh": 64.43
+    },
+    {
+      "id": "ZC-0246",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "week",
+      "label": "Week 2",
+      "avgKwh": 63.14
+    },
+    {
+      "id": "ZC-0247",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "week",
+      "label": "Week 3",
+      "avgKwh": 62.23
+    },
+    {
+      "id": "ZC-0248",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "week",
+      "label": "Week 4",
+      "avgKwh": 54.48
+    },
+    {
+      "id": "ZC-0249",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "week",
+      "label": "Week 5",
+      "avgKwh": 48.64
+    },
+    {
+      "id": "ZC-0250",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "month",
+      "label": "Dec 2025",
+      "avgKwh": 272.13
+    },
+    {
+      "id": "ZC-0251",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "month",
+      "label": "Jan 2026",
+      "avgKwh": 289.31
+    },
+    {
+      "id": "ZC-0252",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "month",
+      "label": "Feb 2026",
+      "avgKwh": 228.46
+    },
+    {
+      "id": "ZC-0253",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "month",
+      "label": "Mar 2026",
+      "avgKwh": 292.56
+    },
+    {
+      "id": "ZC-0254",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "month",
+      "label": "Apr 2026",
+      "avgKwh": 250.2
+    },
+    {
+      "id": "ZC-0255",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "month",
+      "label": "May 2026",
+      "avgKwh": 227.21
+    },
+    {
+      "id": "ZC-0256",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "month",
+      "label": "Jun 2026",
+      "avgKwh": 224.68
+    },
+    {
+      "id": "ZC-0257",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "month",
+      "label": "Jul 2026",
+      "avgKwh": 211.26
+    },
+    {
+      "id": "ZC-0258",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "month",
+      "label": "Aug 2026",
+      "avgKwh": 286.55
+    },
+    {
+      "id": "ZC-0259",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "month",
+      "label": "Sep 2026",
+      "avgKwh": 309.54
+    },
+    {
+      "id": "ZC-0260",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "month",
+      "label": "Oct 2026",
+      "avgKwh": 257.25
+    },
+    {
+      "id": "ZC-0261",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "month",
+      "label": "Nov 2026",
+      "avgKwh": 225.82
+    },
+    {
+      "id": "ZC-0262",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "year",
+      "label": "2024",
+      "avgKwh": 3433.2
+    },
+    {
+      "id": "ZC-0263",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "year",
+      "label": "2025",
+      "avgKwh": 3325.71
+    },
+    {
+      "id": "ZC-0264",
+      "zoneId": "ZN-006",
+      "zoneName": "Bajpe",
+      "period": "year",
+      "label": "2026",
+      "avgKwh": 3526.12
+    }
   ],
   "dailyData": [
-    { "id": "1", "date": "2026-11-01", "units": 12.5 },
-    { "id": "2", "date": "2026-11-02", "units": 14.2 },
-    { "id": "3", "date": "2026-11-03", "units": 11.8 }
+    {
+      "id": "1",
+      "date": "2026-11-01",
+      "units": 12.5
+    },
+    {
+      "id": "2",
+      "date": "2026-11-02",
+      "units": 14.2
+    },
+    {
+      "id": "3",
+      "date": "2026-11-03",
+      "units": 11.8
+    }
   ],
   "weeklyData": [
-    { "id": "1", "week": "Week 1", "units": 85.4 },
-    { "id": "2", "week": "Week 2", "units": 92.1 }
+    {
+      "id": "1",
+      "week": "Week 1",
+      "units": 85.4
+    },
+    {
+      "id": "2",
+      "week": "Week 2",
+      "units": 92.1
+    }
   ],
   "monthlyData": [
-    { "id": "1", "month": "October", "units": 370.6 },
-    { "id": "2", "month": "November", "units": 348.9 }
+    {
+      "id": "1",
+      "month": "October",
+      "units": 370.6
+    },
+    {
+      "id": "2",
+      "month": "November",
+      "units": 348.9
+    }
   ]
 }
