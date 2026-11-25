@@ -80707,6 +80707,98 @@
       "avgKwhPerMeter": 9.61
     }
   ],
+  "zoneSettings": [
+    {
+      "id": "ZN-001",
+      "zoneId": "ZN-001",
+      "thresholds": {
+        "highConsumptionKwh": 30,
+        "lowConsumptionKwh": 2,
+        "abnormalReadingsPerDay": 4,
+        "inactiveMeterHours": 72
+      },
+      "channels": {
+        "email": true,
+        "sms": false,
+        "inApp": true
+      }
+    },
+    {
+      "id": "ZN-002",
+      "zoneId": "ZN-002",
+      "thresholds": {
+        "highConsumptionKwh": 30,
+        "lowConsumptionKwh": 2,
+        "abnormalReadingsPerDay": 5,
+        "inactiveMeterHours": 48
+      },
+      "channels": {
+        "email": true,
+        "sms": true,
+        "inApp": true
+      }
+    },
+    {
+      "id": "ZN-003",
+      "zoneId": "ZN-003",
+      "thresholds": {
+        "highConsumptionKwh": 40,
+        "lowConsumptionKwh": 1,
+        "abnormalReadingsPerDay": 5,
+        "inactiveMeterHours": 48
+      },
+      "channels": {
+        "email": true,
+        "sms": true,
+        "inApp": true
+      }
+    },
+    {
+      "id": "ZN-004",
+      "zoneId": "ZN-004",
+      "thresholds": {
+        "highConsumptionKwh": 35,
+        "lowConsumptionKwh": 1,
+        "abnormalReadingsPerDay": 5,
+        "inactiveMeterHours": 72
+      },
+      "channels": {
+        "email": true,
+        "sms": true,
+        "inApp": true
+      }
+    },
+    {
+      "id": "ZN-005",
+      "zoneId": "ZN-005",
+      "thresholds": {
+        "highConsumptionKwh": 35,
+        "lowConsumptionKwh": 2,
+        "abnormalReadingsPerDay": 5,
+        "inactiveMeterHours": 48
+      },
+      "channels": {
+        "email": true,
+        "sms": false,
+        "inApp": true
+      }
+    },
+    {
+      "id": "ZN-006",
+      "zoneId": "ZN-006",
+      "thresholds": {
+        "highConsumptionKwh": 30,
+        "lowConsumptionKwh": 3,
+        "abnormalReadingsPerDay": 5,
+        "inactiveMeterHours": 72
+      },
+      "channels": {
+        "email": true,
+        "sms": false,
+        "inApp": true
+      }
+    }
+  ],
   "dailyData": [
     {
       "id": "1",

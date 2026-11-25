@@ -371,6 +371,19 @@ for (const zone of zones) {
   }
 }
 
+// ---------- zone alert settings (one per zone, id = zone id) ----------
+const zoneSettings = zones.map((zone) => ({
+  id: zone.id,
+  zoneId: zone.id,
+  thresholds: {
+    highConsumptionKwh: pick([30, 35, 40]), // per meter per day
+    lowConsumptionKwh: pick([1, 2, 3]), // per meter per day
+    abnormalReadingsPerDay: pick([3, 4, 5]),
+    inactiveMeterHours: pick([24, 48, 72]),
+  },
+  channels: { email: true, sms: faker.datatype.boolean(), inApp: true },
+}));
+
 // ---------- sample data from the Setup Guide ----------
 // Kept so the existing end-user Dashboard keeps working until it uses real series.
 const dailyData = [
@@ -403,6 +416,7 @@ for (const [name, list] of Object.entries({
   zoneConsumption,
   meterReadings,
   zoneDailyConsumption,
+  zoneSettings,
 })) {
   if (new Set(list.map((x) => x.id)).size !== list.length)
     throw new Error(`Duplicate ids in ${name}`);
@@ -419,6 +433,7 @@ const db = {
   zoneConsumption,
   meterReadings,
   zoneDailyConsumption,
+  zoneSettings,
   dailyData,
   weeklyData,
   monthlyData,
