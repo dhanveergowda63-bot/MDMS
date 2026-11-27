@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Bell, Menu, Moon, Sun, Zap } from "lucide-react";
+import { Bell, Menu, Moon, Sun } from "lucide-react";
 import { useTheme } from "../theme/theme-context";
 import { demoAccounts } from "../session/demoAccounts";
 import { alertsPath, menuConfig, roleLabels } from "./menuConfig";
@@ -29,16 +29,26 @@ export default function Header({ role, onMenuClick }: HeaderProps) {
 
   return (
     <header className="app-header">
-      <button type="button" className="icon-btn" onClick={onMenuClick} aria-label="Toggle navigation">
+      <button
+        type="button"
+        className="icon-btn"
+        onClick={onMenuClick}
+        aria-label="Toggle navigation"
+      >
         <Menu size={20} />
       </button>
       <Link to={menuConfig[role][0].to} className="app-header__brand">
-        <Zap size={20} /> MDMS
+        {" "}
+        MDMS{" "}
       </Link>
       <span className="app-header__role">{roleLabels[role]}</span>
 
       <div className="app-header__right">
-        <Link to={alertsPath[role]} className="icon-btn" aria-label={`Notifications, ${UNREAD_COUNT} unread`}>
+        <Link
+          to={alertsPath[role]}
+          className="icon-btn"
+          aria-label={`Notifications, ${UNREAD_COUNT} unread`}
+        >
           <Bell size={20} />
           <span className="count-badge">{UNREAD_COUNT}</span>
         </Link>
@@ -66,7 +76,10 @@ export default function Header({ role, onMenuClick }: HeaderProps) {
             </option>
           ))}
         </select>
-        <ProfileMenu account={demoAccounts[role]} roleLabel={roleLabels[role]} />
+        <ProfileMenu
+          account={demoAccounts[role]}
+          roleLabel={roleLabels[role]}
+        />
       </div>
     </header>
   );
