@@ -140,6 +140,20 @@ a {
   gap: 12px;
   flex-wrap: wrap;
 }
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px 24px;
+  margin: 0;
+}
+.detail-grid dt {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.detail-grid dd {
+  margin: 2px 0 0;
+  font-weight: 600;
+}
 .sr-only {
   position: absolute;
   width: 1px;

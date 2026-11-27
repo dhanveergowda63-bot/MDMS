@@ -57,6 +57,10 @@ const router = createBrowserRouter([
             path: "meters",
             ...page(() => import("../features/zone/pages/MeterManagement")),
           },
+          {
+            path: "meters/:meterId",
+            ...page(() => import("../features/zone/pages/MeterDetails")),
+          },
         ],
       },
 
