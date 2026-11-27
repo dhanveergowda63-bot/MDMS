@@ -1,6 +1,8 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import type { ComponentType } from "react";
 import ServerError from "../shared/pages/ServerError";
+import AppLayout from "../shared/layout/AppLayout";
+import Loader from "../shared/components/feedback/Loader";
 
 // Turns a dynamic import into a lazy-loaded route
 const page = (load: () => Promise<{ default: ComponentType }>) => ({
@@ -10,6 +12,7 @@ const page = (load: () => Promise<{ default: ComponentType }>) => ({
 const router = createBrowserRouter([
   {
     errorElement: <ServerError />,
+    hydrateFallbackElement: <Loader fullPage />,
     children: [
       { path: "/", element: <Navigate to="/login" replace /> },
 
@@ -29,22 +32,43 @@ const router = createBrowserRouter([
 
       // End-user
       {
-        path: "/user/dashboard",
-        ...page(() => import("../features/end-user/pages/Dashboard")),
+        path: "/user",
+        element: <AppLayout role="user" />,
+        children: [
+          { index: true, element: <Navigate to="dashboard" replace /> },
+          {
+            path: "dashboard",
+            ...page(() => import("../features/end-user/pages/Dashboard")),
+          },
+        ],
       },
 
       // Zone admin
       {
-        path: "/zone/dashboard",
-        ...page(() => import("../features/zone/pages/ZoneDashboard")),
+        path: "/zone",
+        element: <AppLayout role="zone" />,
+        children: [
+          { index: true, element: <Navigate to="dashboard" replace /> },
+          {
+            path: "dashboard",
+            ...page(() => import("../features/zone/pages/ZoneDashboard")),
+          },
+        ],
       },
 
       // Enterprise
       {
-        path: "/enterprise/dashboard",
-        ...page(
-          () => import("../features/enterprise/pages/EnterpriseDashboard"),
-        ),
+        path: "/enterprise",
+        element: <AppLayout role="enterprise" />,
+        children: [
+          { index: true, element: <Navigate to="dashboard" replace /> },
+          {
+            path: "dashboard",
+            ...page(
+              () => import("../features/enterprise/pages/EnterpriseDashboard"),
+            ),
+          },
+        ],
       },
 
       // Unknown addresses
