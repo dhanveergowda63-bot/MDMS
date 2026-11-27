@@ -45,3 +45,13 @@ export interface CustomerFormValues {
   email: string;
   phone: string;
 }
+
+export interface SettingsFormValues {
+  highConsumptionKwh: string;
+  lowConsumptionKwh: string;
+  abnormalReadingsPerDay: string;
+  inactiveMeterHours: string;
+  email: boolean;
+  sms: boolean;
+  inApp: boolean;
+}
