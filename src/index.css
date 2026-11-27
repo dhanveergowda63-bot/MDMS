@@ -203,3 +203,11 @@ a {
 .menu__item--danger {
   color: var(--danger);
 }
+
+@media print {
+  .app-header,
+  .app-sidebar,
+  .no-print {
+    display: none !important;
+  }
+}
