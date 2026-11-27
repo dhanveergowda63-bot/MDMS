@@ -73,6 +73,10 @@ const router = createBrowserRouter([
             path: "alerts",
             ...page(() => import("../features/zone/pages/Alerts")),
           },
+          {
+            path: "settings",
+            ...page(() => import("../features/zone/pages/Settings")),
+          },
         ],
       },
 

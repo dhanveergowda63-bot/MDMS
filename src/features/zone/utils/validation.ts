@@ -1,5 +1,5 @@
 import type { FormErrors } from "../../../shared/hooks/useForm";
-import type { CustomerFormValues, MeterFormValues } from "../types/zone";
+import type { CustomerFormValues, MeterFormValues, SettingsFormValues } from "../types/zone";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 // Indian mobile: optional +91, then 10 digits starting with 6-9
@@ -61,5 +61,35 @@ export function validateDateRange(from: string, to: string, min: string, max: st
   if (!to) errors.to = "Choose an end date.";
   else if (to < min || to > max) errors.to = `Data is available from ${min} to ${max}.`;
   if (!errors.from && !errors.to && from > to) errors.to = "End date must be on or after the start date.";
+  return errors;
+}
+
+// Parses a numeric input; returns null when it is not a finite number.
+const toNumber = (s: string): number | null => (s.trim() === "" || !Number.isFinite(Number(s)) ? null : Number(s));
+
+export function validateSettingsForm(v: SettingsFormValues): FormErrors<SettingsFormValues> {
+  const errors: FormErrors<SettingsFormValues> = {};
+
+  const high = toNumber(v.highConsumptionKwh);
+  if (high === null) errors.highConsumptionKwh = "Enter a number.";
+  else if (high <= 0 || high > 1000) errors.highConsumptionKwh = "Must be between 0 and 1000 kWh.";
+
+  const low = toNumber(v.lowConsumptionKwh);
+  if (low === null) errors.lowConsumptionKwh = "Enter a number.";
+  else if (low < 0) errors.lowConsumptionKwh = "Cannot be negative.";
+  else if (high !== null && low >= high) errors.lowConsumptionKwh = "Must be lower than the high-consumption threshold.";
+
+  const abnormal = toNumber(v.abnormalReadingsPerDay);
+  if (abnormal === null) errors.abnormalReadingsPerDay = "Enter a number.";
+  else if (!Number.isInteger(abnormal) || abnormal < 1 || abnormal > 50)
+    errors.abnormalReadingsPerDay = "Use a whole number from 1 to 50.";
+
+  const inactive = toNumber(v.inactiveMeterHours);
+  if (inactive === null) errors.inactiveMeterHours = "Enter a number.";
+  else if (!Number.isInteger(inactive) || inactive < 1 || inactive > 720)
+    errors.inactiveMeterHours = "Use a whole number of hours from 1 to 720 (30 days).";
+
+  if (!v.email && !v.sms && !v.inApp) errors.inApp = "Keep at least one notification channel on.";
+
   return errors;
 }
