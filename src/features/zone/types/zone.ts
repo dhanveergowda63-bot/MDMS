@@ -39,3 +39,9 @@ export interface MeterFormValues {
   tariffCategory: TariffCategory | "";
   installedDate: string;
 }
+
+export interface CustomerFormValues {
+  name: string;
+  email: string;
+  phone: string;
+}
