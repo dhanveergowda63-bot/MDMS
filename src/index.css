@@ -140,6 +140,20 @@ a {
   gap: 12px;
   flex-wrap: wrap;
 }
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px 24px;
+  margin: 0;
+}
+.detail-grid dt {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.detail-grid dd {
+  margin: 2px 0 0;
+  font-weight: 600;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -147,6 +161,21 @@ a {
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+
+/* Filter fields above a chart or report */
+.filters-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0 16px;
+  padding-bottom: 4px;
+}
+/* Trend colours: more consumption is a warning, less is good */
+.text-up {
+  color: var(--warning);
+}
+.text-down {
+  color: var(--success);
 }
 
 /* Icon button */

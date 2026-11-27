@@ -53,6 +53,30 @@ const router = createBrowserRouter([
             path: "dashboard",
             ...page(() => import("../features/zone/pages/ZoneDashboard")),
           },
+          {
+            path: "meters",
+            ...page(() => import("../features/zone/pages/MeterManagement")),
+          },
+          {
+            path: "meters/:meterId",
+            ...page(() => import("../features/zone/pages/MeterDetails")),
+          },
+          {
+            path: "users",
+            ...page(() => import("../features/zone/pages/UserManagement")),
+          },
+          {
+            path: "reports",
+            ...page(() => import("../features/zone/pages/Reports")),
+          },
+          {
+            path: "alerts",
+            ...page(() => import("../features/zone/pages/Alerts")),
+          },
+          {
+            path: "settings",
+            ...page(() => import("../features/zone/pages/Settings")),
+          },
         ],
       },
 
