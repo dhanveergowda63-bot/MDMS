@@ -65,6 +65,10 @@ const router = createBrowserRouter([
             path: "users",
             ...page(() => import("../features/zone/pages/UserManagement")),
           },
+          {
+            path: "reports",
+            ...page(() => import("../features/zone/pages/Reports")),
+          },
         ],
       },
 
