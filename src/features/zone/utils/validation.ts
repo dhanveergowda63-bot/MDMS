@@ -47,3 +47,19 @@ export function validateCustomerForm(v: CustomerFormValues): FormErrors<Customer
 
   return errors;
 }
+
+export interface DateRangeErrors {
+  from?: string;
+  to?: string;
+}
+
+// Dates are YYYY-MM-DD strings, so string comparison is date comparison.
+export function validateDateRange(from: string, to: string, min: string, max: string): DateRangeErrors {
+  const errors: DateRangeErrors = {};
+  if (!from) errors.from = "Choose a start date.";
+  else if (from < min || from > max) errors.from = `Data is available from ${min} to ${max}.`;
+  if (!to) errors.to = "Choose an end date.";
+  else if (to < min || to > max) errors.to = `Data is available from ${min} to ${max}.`;
+  if (!errors.from && !errors.to && from > to) errors.to = "End date must be on or after the start date.";
+  return errors;
+}

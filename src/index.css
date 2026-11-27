@@ -163,6 +163,21 @@ a {
   white-space: nowrap;
 }
 
+/* Filter fields above a chart or report */
+.filters-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0 16px;
+  padding-bottom: 4px;
+}
+/* Trend colours: more consumption is a warning, less is good */
+.text-up {
+  color: var(--warning);
+}
+.text-down {
+  color: var(--success);
+}
+
 /* Icon button */
 .icon-btn {
   position: relative;
