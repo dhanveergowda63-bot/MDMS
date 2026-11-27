@@ -148,3 +148,58 @@ a {
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+/* Icon button */
+.icon-btn {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+}
+.icon-btn:hover {
+  background: var(--surface-hover);
+}
+.icon-btn:focus-visible {
+  outline: 2px solid var(--primary);
+}
+
+/* Dropdown menu (row actions, profile) */
+.menu {
+  z-index: 150;
+  padding: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow-lg);
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu__item:hover,
+.menu__item:focus-visible {
+  background: var(--surface-hover);
+  outline: none;
+}
+.menu__item--danger {
+  color: var(--danger);
+}
