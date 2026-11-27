@@ -10,7 +10,8 @@ export interface DemoAccount {
 }
 
 export const demoAccounts: Record<AppRole, DemoAccount> = {
-  user: { userId: "U-008", name: "Achyut Talwar", email: "achyut.talwar8@example.com", zoneId: "ZN-001" },
+  // U-010 has one meter and 12 months of bills with daily rows (see generate-db.mjs).
+  user: { userId: "U-010", name: "Aatmaja Ahuja", email: "aatmaja.ahuja10@example.com", zoneId: "ZN-001" },
   zone: { userId: "U-002", name: "Chatur Acharya", email: "chatur.acharya2@example.com", zoneId: "ZN-001" },
   enterprise: { userId: "U-001", name: "Divya Kapoor", email: "divya.kapoor1@example.com", zoneId: null },
 };

@@ -40,6 +40,22 @@ const router = createBrowserRouter([
             path: "dashboard",
             ...page(() => import("../features/end-user/pages/Dashboard")),
           },
+          {
+            path: "bills",
+            ...page(() => import("../features/end-user/pages/BillsPage")),
+          },
+          {
+            path: "bills/:billId",
+            ...page(() => import("../features/end-user/pages/BillDetailsPage")),
+          },
+          {
+            path: "meter-data",
+            ...page(() => import("../features/end-user/pages/MeterDataPage")),
+          },
+          {
+            path: "alerts",
+            ...page(() => import("../features/end-user/pages/AlertsPage")),
+          },
         ],
       },
 
