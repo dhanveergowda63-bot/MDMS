@@ -61,6 +61,13 @@
   cursor: pointer;
 }
 
+/* Two fields side by side, stacked on narrow screens */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0 16px;
+}
+
 /* Select */
 select.field__input {
   appearance: none;

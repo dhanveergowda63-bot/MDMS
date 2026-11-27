@@ -1,3 +1,5 @@
+import type { TariffCategory } from "../../../shared/types/models";
+
 export interface ZoneSettings {
   id: string; // same as zoneId
   zoneId: string;
@@ -27,4 +29,13 @@ export interface ZoneDailyConsumption {
 export interface ConsumptionPoint {
   label: string;
   kwh: number;
+}
+
+// Form values are kept as strings, the same as the inputs hold them.
+export interface MeterFormValues {
+  meterId: string;
+  ownerId: string;
+  address: string;
+  tariffCategory: TariffCategory | "";
+  installedDate: string;
 }
