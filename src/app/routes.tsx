@@ -104,6 +104,12 @@ const router = createBrowserRouter([
               () => import("../features/enterprise/pages/ZoneDetailsPage"),
             ),
           },
+          {
+            path: "meters",
+            ...page(
+              () => import("../features/enterprise/pages/MeterManagementPage"),
+            ),
+          },
         ],
       },
 
