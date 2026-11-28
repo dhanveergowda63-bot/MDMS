@@ -92,6 +92,31 @@ const router = createBrowserRouter([
               () => import("../features/enterprise/pages/EnterpriseDashboard"),
             ),
           },
+          {
+            path: "zones",
+            ...page(
+              () => import("../features/enterprise/pages/ZoneManagementPage"),
+            ),
+          },
+          {
+            path: "zones/:zoneId",
+            ...page(
+              () => import("../features/enterprise/pages/ZoneDetailsPage"),
+            ),
+          },
+          {
+            path: "meters",
+            ...page(
+              () => import("../features/enterprise/pages/MeterManagementPage"),
+            ),
+          },
+          {
+            path: "users",
+            ...page(
+              () =>
+                import("../features/enterprise/pages/UserRoleManagementPage"),
+            ),
+          },
         ],
       },
 
