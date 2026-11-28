@@ -121,6 +121,10 @@ const router = createBrowserRouter([
             path: "alerts",
             ...page(() => import("../features/enterprise/pages/AlertsPage")),
           },
+          {
+            path: "audit-logs",
+            ...page(() => import("../features/enterprise/pages/AuditLogsPage")),
+          },
         ],
       },
 
