@@ -110,6 +110,13 @@ const router = createBrowserRouter([
               () => import("../features/enterprise/pages/MeterManagementPage"),
             ),
           },
+          {
+            path: "users",
+            ...page(
+              () =>
+                import("../features/enterprise/pages/UserRoleManagementPage"),
+            ),
+          },
         ],
       },
 
