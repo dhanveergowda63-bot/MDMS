@@ -117,6 +117,10 @@ const router = createBrowserRouter([
                 import("../features/enterprise/pages/UserRoleManagementPage"),
             ),
           },
+          {
+            path: "alerts",
+            ...page(() => import("../features/enterprise/pages/AlertsPage")),
+          },
         ],
       },
 
