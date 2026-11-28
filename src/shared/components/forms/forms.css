@@ -61,6 +61,13 @@
   cursor: pointer;
 }
 
+/* Two fields side by side, stacked on narrow screens */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0 16px;
+}
+
 /* Select */
 select.field__input {
   appearance: none;
@@ -136,4 +143,14 @@ select.field__input {
 .toggle__input:focus-visible + .toggle__track {
   outline: 2px solid var(--primary, #4f46e5);
   outline-offset: 2px;
+}
+
+/* Unit shown inside a numeric input, e.g. "kWh" */
+.field__unit {
+  color: var(--text-muted, #6b7280);
+  cursor: default;
+  pointer-events: none;
+}
+.field__control:has(.field__unit) .field__input {
+  padding-right: 72px;
 }
