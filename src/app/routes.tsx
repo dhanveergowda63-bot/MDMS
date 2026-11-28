@@ -74,6 +74,12 @@ const router = createBrowserRouter([
               () => import("../features/enterprise/pages/ZoneManagementPage"),
             ),
           },
+          {
+            path: "zones/:zoneId",
+            ...page(
+              () => import("../features/enterprise/pages/ZoneDetailsPage"),
+            ),
+          },
         ],
       },
 
