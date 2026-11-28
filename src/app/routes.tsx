@@ -117,6 +117,22 @@ const router = createBrowserRouter([
                 import("../features/enterprise/pages/UserRoleManagementPage"),
             ),
           },
+          {
+            path: "alerts",
+            ...page(() => import("../features/enterprise/pages/AlertsPage")),
+          },
+          {
+            path: "audit-logs",
+            ...page(() => import("../features/enterprise/pages/AuditLogsPage")),
+          },
+          {
+            path: "reports",
+            ...page(() => import("../features/enterprise/pages/ReportsPage")),
+          },
+          {
+            path: "settings",
+            ...page(() => import("../features/enterprise/pages/SettingsPage")),
+          },
         ],
       },
 
