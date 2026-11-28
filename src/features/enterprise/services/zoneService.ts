@@ -1,12 +1,10 @@
-import API from "../../../services/http";
-import type { Zone } from "../types/enterprise";
-import { fetchList } from "./query";
-import type { ListParams } from "./query";
+import { fetchOne, fetchPage } from "../../../services/query";
+import type { ListQuery } from "../../../services/query";
+import type { Paginated } from "../../../shared/types/api";
+import type { Zone } from "../../../shared/types/models";
 
-export const getZones = (params?: ListParams) =>
-  fetchList<Zone>("/zones", params);
+export const getZones = (query: ListQuery, signal?: AbortSignal): Promise<Paginated<Zone>> =>
+  fetchPage<Zone>("/zones", query, signal);
 
-export const getZoneById = async (zoneId: string) => {
-  const res = await API.get<Zone>(`/zones/${zoneId}`);
-  return res.data;
-};
+export const getZoneById = (zoneId: string, signal?: AbortSignal): Promise<Zone> =>
+  fetchOne<Zone>(`/zones/${zoneId}`, signal);
